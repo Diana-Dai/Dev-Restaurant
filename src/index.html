@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here is a precise description of my awesome webpage.">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="absolute top-0 left-0 right-0 bg-transparent z-10">
+        <div class="container-middle flex justify-between items-center my-0 py-0.48">
+            <h4 class="uppercase title-sm"><a href="">Dev Restaurant</a></h4>
+            <nav class="hidden sm:block">
+                <ul role="list" class="flex justify-between items-center">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="#">Chef</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <button class="primary-button">Reservations</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Menu of Mobile Version -->
+            <nav class="mobile sm:hidden">
+                <button>
+                    <svg class="icon" width="20px" height="20.00px" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M96 256h832c19.2 0 32-12.8 32-32s-12.8-32-32-32H96c-19.2 0-32 12.8-32 32s12.8 32 32 32zM928 480H96c-19.2 0-32 12.8-32 32s12.8 32 32 32h832c19.2 0 32-12.8 32-32s-12.8-32-32-32zM928 768H96c-19.2 0-32 12.8-32 32s12.8 32 32 32h832c19.2 0 32-12.8 32-32s-12.8-32-32-32z" />
+                    </svg>
+                </button>
+                <div class="hidden fixed bg-black h-all top-0 right-0 z-10">
+                    <div>
+                        <ul role="list" class="flex flex-col mt-4">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Menu</a>
+                            </li>
+                            <li>
+                                <a href="">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="#">Chef</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <button class="primary-button">Reservations</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <div class="hero">
+        <div class="container-middle">
+            <div class="absolute">
+                <div>
+                    <span class="sub-title">
+                        For happy day
+                    </span>
+                </div>
+                <h1 class="uppercase title-2xl">
+                    <span>enjoy</span>
+                    <br>
+                    <span>happy meal</span>
+                </h1>
+                <div class="check-menu">
+                    <a href="">
+                        <span class="line"></span>
+                        check our menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about bg-border-wrapper-grey bg-secondary">
+        <div class="container-middle relative">
+            <div class="relative">
+                <div class="card-wrapper sm:flex justify-around block">
+                    <!-- Card -->
+                    <div class="card flex-1 bg-primary">
+                        <div class="flex flex-col items-center">
+                            <div class="img-wrapper relative">
+                                <img class="align-bottom" width="43px" height="43px" src="./imgs/icon-1.svg"
+                                    alt="Quality Food">
+                            </div>
+                            <h5 class="uppercase title-xs">
+                                Quality foods
+                            </h5>
+                            <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
+                                maximus velit, non
+                                eleifend
+                                libero
+                                curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="card flex-1 bg-primary">
+                        <div class="flex flex-col items-center">
+                            <div class="img-wrapper relative">
+                                <img class="align-bottom" width="55px" height="43px" src="./imgs/icon-2.svg"
+                                    alt="Quality Food">
+                            </div>
+                            <h5 class="uppercase title-xs">
+                                fastest delivery
+                            </h5>
+                            <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
+                                maximus velit,
+                                noneleifend
+                                libero
+                                curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="card flex-1 bg-primary">
+                        <div class="flex flex-col items-center">
+                            <div class="img-wrapper relative">
+                                <img class="align-bottom" width="43px" height="43px" src="./imgs/icon-3.svg"
+                                    alt="Quality Food">
+                            </div>
+                            <h5 class="uppercase title-xs">
+                                original recipes
+                            </h5>
+                            <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
+                                maximus velit,
+                                non
+                                eleifend
+                                libero
+                                curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-wrapper relative">
+                <div class="relative">
+                    <div class="chef-wrapper">
+                        <img width="564.8" height="576" src="./imgs/chef-1.jpg" alt="Our story picture">
+                    </div>
+                    <div class="story-text-wrapper sm:absolute sm:right-0">
+                        <div class="py-2.5 px-2 sm:px-5 bg-primary">
+                            <h2 class="leading-none title-xl">Discover <br>
+                                <strong class="uppercase title-lg">Our Story</strong>
+                            </h2>
+                            <span class="uppercase text-md">
+                                ULTIMATE DINING EXPERIENCE LIKE NO OTHER
+                            </span>
+                            <p>
+                                One of the notable character traits of a successful small restaurant owner is the
+                                ability to
+                                easily solve problems. Problem-solving is a skill and most of the time comes with
+                                being
+                                open-minded.
+
+                                Successful entrepreneurs are open-minded people and as such good optimists, critical
+                                thinkers and problem solvers. As a small restaurant owner, you need to be able to
+                                proffer
+                                quick solutions to any problem that may arise in the course of your business day.
+                            </p>
+
+                            <div class="mt-1.5">
+                                <strong>OUR FOUNDER JOHN PHILLIPE</strong>
+                                <br>
+                                <span class="title-xl leading-none">
+                                    Devil Roy Barman
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container-middle relative">
+            <div class="menu-wrapper flex flex-col align-middle ">
+                <h2 class="uppercase title-md text-center">
+                    let's discover food
+                    <br>
+                    <strong class="title-xl ">
+                        special dishes today
+                    </strong>
+                </h2>
+                <div class="menu-bar flex justify-center">
+                    <a class="menu-bar-item active flex-1 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 52">
+                            <g transform="translate(601.029 -347.027)">
+                                <g transform="translate(-589.016 350.441)">
+                                    <path
+                                        d="M-567.49,350.441a21.451,21.451,0,0,0-21.526,21.375,21.452,21.452,0,0,0,21.526,21.376,21.452,21.452,0,0,0,21.527-21.376,21.451,21.451,0,0,0-21.527-21.375Zm0,37.6a16.276,16.276,0,0,1-16.334-16.219A16.276,16.276,0,0,1-567.492,355.6a16.278,16.278,0,0,1,16.335,16.219h0a16.3,16.3,0,0,1-16.334,16.22Z"
+                                        transform="translate(589.016 -350.441)" fill="#fff" />
+                                </g>
+                                <g transform="translate(-579.445 359.874)">
+                                    <path
+                                        d="M-567.49,360.012a11.955,11.955,0,0,0-11.955,11.956,11.955,11.955,0,0,0,11.955,11.956,11.956,11.956,0,0,0,11.956-11.956A11.969,11.969,0,0,0-567.49,360.012Z"
+                                        transform="translate(579.445 -360.012)" fill="#fff" />
+                                </g>
+                                <g transform="translate(-543.472 347.027)">
+                                    <path
+                                        d="M-537.386,373.617V347.61a.588.588,0,0,0-.592-.583.591.591,0,0,0-.464.229,24.525,24.525,0,0,0-5.03,14.874v9.514a1.982,1.982,0,0,0,1.987,1.977h.829c-.817,8.386-1.356,20.116-1.356,21.49,0,2.162,1.339,3.917,2.991,3.917s2.992-1.758,2.992-3.917C-536.029,393.735-536.572,382-537.386,373.617Z"
+                                        transform="translate(543.472 -347.027)" fill="#fff" />
+                                </g>
+                                <g transform="translate(-601.029 349.365)">
+                                    <path
+                                        d="M-592.344,368.47a5.68,5.68,0,0,0,2.762-4.869l-.819-13.326a.967.967,0,0,0-1.021-.909.967.967,0,0,0-.914,1.016l.536,10.687a1.091,1.091,0,0,1-1.127,1.055,1.091,1.091,0,0,1-1.061-1.055l-.266-10.686a1.046,1.046,0,0,0-1.08-1.009,1.045,1.045,0,0,0-1.015,1.009l-.27,10.686a1.091,1.091,0,0,1-1.127,1.055,1.091,1.091,0,0,1-1.061-1.055l.533-10.689a.966.966,0,0,0-.949-.984.967.967,0,0,0-.985.879l-.821,13.326a5.68,5.68,0,0,0,2.762,4.869,3.211,3.211,0,0,1,1.539,3.106c-.934,8.373-1.57,22.043-1.57,23.533,0,2.162,1.339,3.916,2.991,3.916s2.992-1.757,2.992-3.916c0-1.49-.635-15.16-1.571-23.533A3.214,3.214,0,0,1-592.344,368.47Z"
+                                        transform="translate(601.029 -349.365)" fill="#fff" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="inline-block mt-0.5">Dinner</span>
+                    </a>
+                    <a class="menu-bar-item flex-1 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 53.764">
+                            <g transform="translate(600.029 -345.088)">
+                                <path
+                                    d="M-551.925,356.1a7.076,7.076,0,0,0,.784-7.207,13.079,13.079,0,0,0-1.952-3.414,1.074,1.074,0,0,0-1.514-.136,1.075,1.075,0,0,0-.137,1.514c.053.064,3.736,4.59,1.127,7.916-3.758,4.791.249,11.109.421,11.375a1.074,1.074,0,0,0,1.486.319,1.073,1.073,0,0,0,.319-1.486h0C-551.424,364.925-554.733,359.675-551.925,356.1Z" />
+                                <path
+                                    d="M-544.71,356.1a7.076,7.076,0,0,0,.784-7.207,13.053,13.053,0,0,0-1.953-3.414,1.075,1.075,0,0,0-1.515-.123,1.077,1.077,0,0,0-.135,1.5c.038.045,3.741,4.583,1.127,7.916-3.759,4.791.249,11.109.421,11.375a1.074,1.074,0,0,0,1.486.319,1.073,1.073,0,0,0,.319-1.486h0C-544.208,364.925-547.518,359.675-544.71,356.1Z" />
+                                <path
+                                    d="M-589.847,356.594a7.08,7.08,0,0,0,.785-7.208,13.064,13.064,0,0,0-1.953-3.413,1.074,1.074,0,0,0-1.515-.123,1.075,1.075,0,0,0-.135,1.5c.038.046,3.741,4.584,1.127,7.917-3.758,4.79.248,11.108.421,11.375a1.075,1.075,0,0,0,1.486.319,1.077,1.077,0,0,0,.319-1.487C-589.345,365.423-592.655,360.172-589.847,356.594Z" />
+                                <path
+                                    d="M-582.631,356.594a7.078,7.078,0,0,0,.784-7.208,13.09,13.09,0,0,0-1.952-3.413,1.074,1.074,0,0,0-1.515-.123,1.075,1.075,0,0,0-.136,1.5c.038.046,3.742,4.584,1.127,7.917-3.758,4.79.248,11.108.421,11.375a1.075,1.075,0,0,0,1.475.367,1.074,1.074,0,0,0,.367-1.475c-.012-.02-.025-.04-.038-.06C-582.13,365.423-585.44,360.172-582.631,356.594Z" />
+                                <path
+                                    d="M-538.6,390.369h-2.28a26.665,26.665,0,0,0-24.282-25.447v-1.1a4.5,4.5,0,0,0,1.537-6.171,4.5,4.5,0,0,0-3.858-2.18h-.1a4.5,4.5,0,0,0-4.5,4.491,4.5,4.5,0,0,0,2.18,3.86v1.1a26.664,26.664,0,0,0-24.282,25.447h-2.28a3.572,3.572,0,0,0-3.567,3.568v1.344a3.574,3.574,0,0,0,3.567,3.571H-538.6a3.574,3.574,0,0,0,3.568-3.571v-1.344A3.574,3.574,0,0,0-538.6,390.369Zm-31.332-30.392a2.353,2.353,0,0,1,2.351-2.351h.1a2.347,2.347,0,0,1,2.351,2.343,2.349,2.349,0,0,1-1.5,2.192,1.073,1.073,0,0,0-.682,1v1.661h-.441v-1.661a1.073,1.073,0,0,0-.682-1A2.337,2.337,0,0,1-569.929,359.977ZM-538.6,396.7h-57.865a1.422,1.422,0,0,1-1.419-1.421v-1.344a1.422,1.422,0,0,1,1.419-1.418h1.767l.029,0h38.6a1.075,1.075,0,0,0,1.075-1.075,1.075,1.075,0,0,0-1.075-1.075h-35.963a24.5,24.5,0,0,1,24.351-23.4h.3a24.5,24.5,0,0,1,24.351,23.4h-6.081a1.075,1.075,0,0,0-1.075,1.075,1.075,1.075,0,0,0,1.075,1.075l8.3,0h2.213a1.419,1.419,0,0,1,1.418,1.418v1.344h0A1.422,1.422,0,0,1-538.6,396.7Z" />
+                            </g>
+                        </svg>
+                        <span class="inline-block mt-0.5">Lunch</span>
+                    </a>
+                    <a class="menu-bar-item flex-1 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 78 51.796">
+                            <g transform="translate(652.029 -294.836)">
+                                <g transform="translate(-652.029 294.836)">
+                                    <g transform="translate(656.898 -293.213)" fill="#fff" stroke-miterlimit="10">
+                                        <path
+                                            d="M-605.861,303.925a18.906,18.906,0,0,0-18.906,18.907h37.813A18.908,18.908,0,0,0-605.861,303.925Z"
+                                            stroke="#000" stroke-width="2" />
+                                    </g>
+                                    <g transform="translate(655.888 -290.158)" fill="none" stroke-miterlimit="10">
+                                        <path
+                                            d="M-584.055,321.032h-41.589a4.779,4.779,0,0,0-4.776,4.778,4.777,4.777,0,0,0,4.776,4.776h41.589a4.777,4.777,0,0,0,4.776-4.776A4.779,4.779,0,0,0-584.055,321.032Z"
+                                            stroke="#000" stroke-width="2" />
+                                    </g>
+                                    <g transform="translate(656.708 -288.201)" fill="none" stroke-miterlimit="10">
+                                        <path xmlns="http://www.w3.org/2000/svg"
+                                            d="M -590.1238403320312 338.4141845703125 L -622.8065185546875 338.4141845703125 C -623.92333984375 338.4141845703125 -624.8319091796875 337.5066223144531 -624.8319091796875 336.3910522460938 L -624.8319091796875 332.989013671875 L -588.0984497070312 332.989013671875 L -588.0984497070312 336.3910522460938 C -588.0984497070312 337.5066223144531 -589.0070190429688 338.4141845703125 -590.1238403320312 338.4141845703125 Z"
+                                            stroke="#000" stroke-width="2" />
+                                    </g>
+                                    <g transform="translate(652.029 -294.836)" fill="none" stroke-miterlimit="10">
+                                        <path xmlns="http://www.w3.org/2000/svg"
+                                            d="M -630.6072998046875 345.6318969726562 L -651.0289916992188 345.6318969726562 L -651.0289916992188 314.582763671875 L -638.6659545898438 314.582763671875 L -637.6659545898438 314.582763671875 L -637.6659545898438 313.582763671875 L -637.6659545898438 303.1274108886719 C -637.6659545898438 301.2206726074219 -636.8475952148438 299.5260314941406 -635.2993774414062 298.2266540527344 C -633.4328002929688 296.6602172851562 -630.8726196289062 295.9145812988281 -629.0429077148438 295.8420715332031 L -629.1026611328125 296.1812438964844 C -630.7933959960938 296.2596740722656 -633.2796020507812 296.99169921875 -635.0739135742188 298.49658203125 C -636.5406494140625 299.7269592285156 -637.31591796875 301.3282470703125 -637.31591796875 303.1274108886719 L -637.31591796875 313.582763671875 L -637.31591796875 314.582763671875 L -636.31591796875 314.582763671875 L -630.6072998046875 314.582763671875 L -630.6072998046875 345.6318969726562 Z"
+                                            stroke="#000" stroke-width="2" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="inline-block mt-0.5">Brunch</span>
+                    </a>
+                    <a class="menu-bar-item flex-1  text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 53.706">
+                            <g transform="translate(1257.824 -184.337)">
+                                <path
+                                    d="M-1194.731,224.5h-4.25v-16.33a4.682,4.682,0,0,0,3.745-4.581,4.679,4.679,0,0,0-4.673-4.674h-4.815a.952.952,0,0,0-.952.952.953.953,0,0,0,.952.953h4.815a2.772,2.772,0,0,1,2.769,2.769,2.772,2.772,0,0,1-2.769,2.769h-8.838a4.459,4.459,0,0,0-4.453,4.453v7.068a2.6,2.6,0,0,1-2.593,2.593,2.6,2.6,0,0,1-2.593-2.593v-7.068a4.458,4.458,0,0,0-4.453-4.453,4.458,4.458,0,0,0-4.452,4.453v2.845a2.351,2.351,0,0,1-2.349,2.348,2.351,2.351,0,0,1-2.349-2.348v-2.845a4.458,4.458,0,0,0-4.452-4.453h-14.3a2.772,2.772,0,0,1-2.769-2.769,2.772,2.772,0,0,1,2.769-2.769h41.631a.953.953,0,0,0,.952-.953.952.952,0,0,0-.952-.952h-4.856l0,0c2.908-2.908,3.935-7.4,2.749-12.026a2.2,2.2,0,0,0-1.584-1.584c-4.622-1.189-9.118-.162-12.027,2.747a10.722,10.722,0,0,0-2,2.766,7.9,7.9,0,0,0-5.186-1.936,7.935,7.935,0,0,0-1.48.14,9.013,9.013,0,0,0-3.667-4.545.953.953,0,0,0-1.31.313.952.952,0,0,0,.313,1.309,7.115,7.115,0,0,1,2.836,3.509,7.93,7.93,0,0,0-4.612,7.193,7.9,7.9,0,0,0,.288,2.117h-11.1a4.679,4.679,0,0,0-4.673,4.674,4.682,4.682,0,0,0,3.745,4.581V224.5h-4.25a1.91,1.91,0,0,0-1.908,1.908v2.568a4.141,4.141,0,0,0,4.137,4.137h1.111v2.6a2.327,2.327,0,0,0,2.324,2.324h49.856a2.326,2.326,0,0,0,2.324-2.324v-2.6h1.111a4.141,4.141,0,0,0,4.137-4.137v-2.568A1.909,1.909,0,0,0-1194.731,224.5Zm-28.744-35.1c2.465-2.464,6.185-3.284,10.207-2.25a.3.3,0,0,1,.213.213c1.033,4.023.212,7.743-2.251,10.206a8.686,8.686,0,0,1-1.721,1.336l-.021.014h-6.43l2.042-2.042a8.874,8.874,0,0,0,2.122.258,9.007,9.007,0,0,0,.995-.055.951.951,0,0,0,.842-1.05.952.952,0,0,0-1.05-.843,7.132,7.132,0,0,1-1.247.028l1.02-1.02a8.88,8.88,0,0,0,2.122.258,9.012,9.012,0,0,0,1-.055.953.953,0,0,0,.842-1.051.952.952,0,0,0-1.05-.842,7.146,7.146,0,0,1-1.248.028l1.3-1.3a.951.951,0,0,0,0-1.346.951.951,0,0,0-1.346,0l-1.3,1.3a7.131,7.131,0,0,1,.028-1.247.953.953,0,0,0-.843-1.051.953.953,0,0,0-1.05.843,8.911,8.911,0,0,0,.2,3.116l-1.021,1.021a7.038,7.038,0,0,1,.027-1.247.951.951,0,0,0-.842-1.05.953.953,0,0,0-1.051.842,8.908,8.908,0,0,0,.2,3.116l-3.149,3.149A10.143,10.143,0,0,1-1223.475,189.4Zm-14.547,7.4a6.022,6.022,0,0,1,3.246-5.337,8.79,8.79,0,0,1,.164,1.4.952.952,0,0,0,.952.95.952.952,0,0,0,.952-.952,10.557,10.557,0,0,0-.239-2,5.965,5.965,0,0,1,.941-.074,6.005,6.005,0,0,1,4.433,1.952,13.475,13.475,0,0,0-.249,6.18h-9.817A5.979,5.979,0,0,1-1238.022,196.8Zm29.275,11.465h7.862v3.8h-10.41v-1.248A2.551,2.551,0,0,1-1208.747,208.267Zm-14.092,0a2.551,2.551,0,0,1,2.549,2.548v1.248h-5.1v-1.248A2.551,2.551,0,0,1-1222.839,208.267Zm-11.054,2.548v1.248h-15.869v-3.8h13.321A2.551,2.551,0,0,1-1233.893,210.815Zm39.165,18.165a2.235,2.235,0,0,1-2.233,2.233h-9.921a.952.952,0,0,0-.952.952.952.952,0,0,0,.952.952h6.906v2.6a.42.42,0,0,1-.42.42h-49.856a.42.42,0,0,1-.419-.42v-2.6h39.406a.952.952,0,0,0,.952-.952.952.952,0,0,0-.952-.952h-42.422a2.235,2.235,0,0,1-2.232-2.233l0-2.572h24.085a.952.952,0,0,0,.952-.952.952.952,0,0,0-.952-.952h-17.931V213.967h15.881a4.259,4.259,0,0,0,4.241,3.946,4.259,4.259,0,0,0,4.241-3.946h5.109v3.916a4.5,4.5,0,0,0,4.5,4.5,4.5,4.5,0,0,0,4.5-4.5v-3.916h10.41V224.5h-26.564a.952.952,0,0,0-.952.952.952.952,0,0,0,.952.952l32.721,0Z" />
+                                <path
+                                    d="M-1245.967,216.008h-.013a.953.953,0,0,0-.952.953.952.952,0,0,0,.952.952h.013a.953.953,0,0,0,.953-.952A.953.953,0,0,0-1245.967,216.008Z" />
+                                <path
+                                    d="M-1243.142,218.283h-.013a.953.953,0,0,0-.952.953.952.952,0,0,0,.952.952h.013a.952.952,0,0,0,.952-.952A.953.953,0,0,0-1243.142,218.283Z" />
+                                <path
+                                    d="M-1206.027,217.335h.014a.952.952,0,0,0,.952-.952.952.952,0,0,0-.952-.952h-.014a.952.952,0,0,0-.952.952A.952.952,0,0,0-1206.027,217.335Z" />
+                            </g>
+                        </svg>
+                        <span class="inline-block mt-0.5">Desert</span>
+                    </a>
+                    <a class="menu-bar-item flex-1 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 59.147">
+                            <g transform="translate(1231.466 -217.445)">
+                                <g transform="translate(-1231.466 217.445)">
+                                    <path
+                                        d="M-1224.108,254.884a6.9,6.9,0,0,0,5.3,8.094,6.9,6.9,0,0,0,8.205-5.283l1.132-10.386c-3.72-2.019-2.357,6.35-8.783,4.963C-1222.671,251.316-1223.875,254.14-1224.108,254.884Z"
+                                        transform="translate(1230.244 -222.445)" />
+                                    <path
+                                        d="M-1177.552,263.177a1.666,1.666,0,0,0-2.109-1.058l-4.634,1.541-2.915-8.766a12.151,12.151,0,0,0,5.572-5.474,12.257,12.257,0,0,0,.621-9.511l-7.615-17.6-20.248,6.737,1.352,5.5-17.3-3.741-5.707,18.46a12.2,12.2,0,0,0,1.682,9.248,12.133,12.133,0,0,0,6.13,4.837l-1.953,9.03-4.767-1.028a1.679,1.679,0,0,0-1.981,1.279,1.666,1.666,0,0,0,1.278,1.981l6.381,1.379c.005,0,.008,0,.011,0s.016,0,.023,0l6.383,1.378a1.67,1.67,0,0,0,.354.037,1.667,1.667,0,0,0,1.627-1.316,1.667,1.667,0,0,0-1.278-1.981l-4.77-1.032,1.947-8.993c.319.026.638.052.958.052a12.359,12.359,0,0,0,12-9.816l1.353-10.141.888,3.612a12.258,12.258,0,0,0,11.645,8.4,12.119,12.119,0,0,0,2.258-.233l2.907,8.742-4.626,1.537a1.667,1.667,0,0,0-1.058,2.108,1.67,1.67,0,0,0,1.583,1.141,1.635,1.635,0,0,0,.526-.085l12.424-4.131A1.668,1.668,0,0,0-1177.552,263.177Zm-32.24-9.419a9.06,9.06,0,0,1-10.632,6.846h0a8.873,8.873,0,0,1-5.628-3.894,8.841,8.841,0,0,1-1.261-6.6l4.766-15.4,14.863,3.213Zm8.724-6.881-3.84-15.639,14.431-4.8,6.347,14.66a8.894,8.894,0,0,1-.489,6.83,8.888,8.888,0,0,1-5.177,4.482,8.871,8.871,0,0,1-2.829.462A8.9,8.9,0,0,1-1201.068,246.876Z"
+                                        transform="translate(1231.466 -218.268)" />
+                                    <path
+                                        d="M-1179.846,244.755c-.322-.712-1.815-3.392-6.1-1.967-6.243,2.076-5.791-6.392-9.268-3.984l2.244,10.2a6.911,6.911,0,0,0,8.726,4.371A6.906,6.906,0,0,0-1179.846,244.755Z"
+                                        transform="translate(1225.331 -220.986)" />
+                                    <path
+                                        d="M-1211.7,221.215a1.888,1.888,0,0,0,1.781-1.985,1.887,1.887,0,0,0-1.985-1.783,1.887,1.887,0,0,0-1.784,1.986A1.889,1.889,0,0,0-1211.7,221.215Z"
+                                        transform="translate(1228.458 -217.445)" />
+                                    <path
+                                        d="M-1202.926,225.18a1.887,1.887,0,0,0,1.78-1.986,1.887,1.887,0,0,0-1.985-1.781,1.888,1.888,0,0,0-1.784,1.985A1.888,1.888,0,0,0-1202.926,225.18Z"
+                                        transform="translate(1226.973 -218.116)" />
+                                    <path
+                                        d="M-1212.56,227.449a1.886,1.886,0,0,0,1.984,1.782,1.888,1.888,0,0,0,1.785-1.986,1.889,1.889,0,0,0-1.989-1.781A1.888,1.888,0,0,0-1212.56,227.449Z"
+                                        transform="translate(1228.267 -218.801)" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="inline-block mt-0.5">Wine</span>
+                    </a>
+                </div>
+                <div class="menu-items-wrapper flex flex-wrap">
+                    <div class="menu-item flex flex-col items-center">
+
+                        <div class="img-wrapper relative">
+                            <img class="w-full" class="w-full" width="30px" height="30px"
+                                src="./imgs/dishes/menu-banana&Blueberry.jpg"
+                                alt="Banana & Blueberry French Toast Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$50</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs whitespace-nowrap">Banana & Blueberry French Toast </h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-burger.jpg"
+                                alt="Chesse Burger Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$39</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase whitespace-nowrap">Chesse Burger </h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-pizza.jpg"
+                                alt="Pizza" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$30</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Pizza </h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-sandwich.jpg"
+                                alt="sandwich Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$20</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Sandwich</h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-icecream.jpg"
+                                alt="Icecream Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$35</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Icecream </h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-hot-dog.jpg"
+                                alt="Hot Dog Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$35</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Hot Dog</h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-salad.jpg"
+                                alt="Salad Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$20</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Salad </h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                    <div class="menu-item flex flex-col items-center">
+                        <div class="img-wrapper relative">
+                            <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-cheeseburger.jpg"
+                                alt="Meat balls Picture" srcset="">
+                            <div class="price-wrapper absolute rounded-full bg-black text-center">
+                                <span class="">$68</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="title-xxs uppercase  whitespace-nowrap">Meat Balls</h5>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                Pinnately.</p>
+                        </div>
+                        <button class="primary-button-long">Read more</button>
+                    </div>
+                </div>
+                <div class="text-center mt-2.5">
+                    <button class="primary-button-long-dark">View All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="set-menu">
+        <div class="container-middle h-full relative ">
+            <div class="story-wrapper relative">
+                <div class="relative">
+                    <div class="chef-wrapper">
+                        <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
+                    </div>
+                    <div class="story-text-wrapper sm:absolute sm:right-0">
+                        <div class="bg-primary">
+                            <div class="py-2.5 px-2 sm:px-5 ">
+                                <h2 class="leading-snug title-md text-center">Dev Restaurant <br>
+                                    <span class="title-lg">LUNCH SET Menu</span>
+                                </h2>
+                                <div class="flex flex-col items-center mt-1">
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Southwest beef fillet </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$50</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig balsamic
+                                            glaze
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Grilled Angus sirloin </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$30</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            caramelized onion & goats cheese en croute, vegetable medley, red wine jus
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Chicken thigh minion</p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$20</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables, shiraz
+                                            jus
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Oven roasted chicken breast </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$39</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-wrapper relative">
+                <div class="relative clear-both">
+                    <div class="chef-wrapper sm:absolute right-0">
+                        <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
+                    </div>
+                    <div class="story-text-wrapper">
+                        <div class="bg-primary">
+                            <div class="py-2.5 px-2 sm:px-5 ">
+                                <h2 class="leading-snug title-md text-center">Dev Restaurant <br>
+                                    <span class="title-lg">DINNER SET Menu</span>
+                                </h2>
+                                <div class="flex flex-col items-center mt-1">
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Southwest beef fillet </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$50</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig balsamic
+                                            glaze
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Grilled Angus sirloin </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$30</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            caramelized onion & goats cheese en croute, vegetable medley, red wine jus
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Chicken thigh minion</p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$20</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables, shiraz
+                                            jus
+                                        </p>
+                                    </div>
+                                    <div class="mb-1 w-full">
+                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                            <p class="flex-grow-0">Oven roasted chicken breast </p>
+                                            <span class="line flex-grow mx-1"></span>
+                                            <span class="flex-grow-0">$39</span>
+                                        </div>
+                                        <p class="tracking-tighter">
+                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customers -mt-1 relative">
+        <div class="sm:flex">
+            <div class="bg-dark flex-1" style="width: 9999px;">
+                <div class="py-5 px-5 flex flex-col items-center float-left">
+                    <div class="inline-block w-1.5">
+                        <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45" height="39.375"
+                            viewBox="0 0 45 39.375">
+                            <path
+                                d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
+                                transform="translate(543.466 -4672.049)" fill="#fff" />
+                        </svg>
+                    </div>
+                    <p class="title-xs py-2 text-center">Any Time We Start Something New It Is Exciting And We Are Very
+                        Motivated
+                        And
+                        Committed.
+                    </p>
+                    <span>
+                        <span class="line"></span>
+                        Devil Roy Barman
+                    </span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img width="977px" height="602px" src="./imgs/customers.png" alt="Picture of the customers">
+            </div>
+        </div>
+    </div>
+    <div class="recipe bg-border-wrapper-grey bg-secondary">
+        <div class="container-middle relative">
+            <div class="menu-wrapper flex flex-col align-middle ">
+                <h2 class="uppercase title-md text-center">
+                    Discover Recipes From Restaurant
+                    <br>
+                    <strong class="title-xl ">
+                        RECENT RECIPES
+                    </strong>
+                </h2>
+                <div class="recipes-wrapper">
+                    <div class="flex">
+                        <ul class="flex-1">
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img width="285px" height="285px" src="./imgs/recipes/recipe-1.jpg"
+                                        alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-2.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-3.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-4.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1">
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-5.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-6.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-7.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-9.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1">
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-8.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-10.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-11.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-1">
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-12.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-13.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-14.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                            <li class="pw-10">
+                                <a href="#">
+                                    <img src="./imgs/recipes/recipe-15.jpg" alt="recipe picture">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="primary-button-long-dark">View All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chefs bg-primary">
+        <div class="container-middle relative">
+            <div class="menu-wrapper flex flex-col align-middle ">
+                <h2 class="uppercase title-md text-center">
+                    Discover Chefs From Restaurant
+                    <br>
+                    <strong class="title-xl ">
+                        Our chefs
+                    </strong>
+                </h2>
+            </div>
+            <div class="chef-wrapper flex">
+                <div class="flex-1 bg-secondary">
+                    sss
+                </div>
+                <div class="flex-1 bg-secondary">
+                    ss </div>
+                <div class="flex-1 bg-secondary">
+                    ss
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
