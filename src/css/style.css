@@ -64,6 +64,9 @@ a:hover {
 }
 
 /* Font-size */
+.text-sm {
+  font-size: 0.18rem;
+}
 .text-md {
   /* 16px */
   font-size: 0.23rem;
@@ -411,3 +414,74 @@ header .mobile ul li:last-child {
 /*==========================================*/
 /*Chefs Part */
 /*==========================================*/
+
+/*==========================================*/
+/*Carousel */
+/*==========================================*/
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; /* important */
+  cursor: pointer;
+}
+.carousel-container .carousel-wrapper {
+  transform: translateX(-100%);
+  font-size: 0;
+}
+.carousel-container .carousel-wrapper .slide {
+  width: 100%;
+  display: inline-block;
+}
+.carousel-container .pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-container .pagination span {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.8s linear;
+}
+
+.carousel-container .pagination span.selected {
+  background-color: white;
+}
+.carousel-container {
+  position: relative;
+}
+/* 
+.carousel-container .control-btn {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.5s linear;
+  border-radius: 50%;
+}
+.carousel-container:hover .control-btn {
+  visibility: visible;
+  opacity: 1;
+} */
+.carousel-container .control-btn:hover {
+  background-color: rgba(255, 255, 255, 0.774);
+}
+.carousel-container .control-btn-left {
+  left: 0;
+}
+.carousel-container .control-btn-right {
+  right: 0;
+}
+.carousel-container .control-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
