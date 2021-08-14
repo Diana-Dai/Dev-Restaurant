@@ -1,6 +1,7 @@
 const carouselParent = document.querySelector(".customers");
 const carouselControler = new CarouselControler();
 
+// Mark the status of the carousel
 var isCarouselOn = false;
 
 function checkViewPoint(el) {

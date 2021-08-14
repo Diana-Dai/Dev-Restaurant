@@ -32,11 +32,9 @@ class AutoSlide {
     this.controler = "";
   }
   start() {
-    // debugger;
     this.controler = setInterval(utils.next, 3000);
   }
   stop() {
-    // debugger;
     clearInterval(this.controler);
   }
 }
@@ -108,7 +106,8 @@ const utils = {
   resetToEnd: function () {
     carouselWrapper.style.transition = "0s";
     carouselWrapper.style.transform = "translateX(" + -slidesNum * 100 + "%)";
-  }, //Activate the left and right button to control carousel
+  },
+  //Activate the left and right button to control carousel
   activateCarousel: function () {
     const btnLeft = document.querySelector(".control-btn-left");
     const btnRight = document.querySelector(".control-btn-right");
@@ -130,5 +129,4 @@ carouselContainer.onmouseenter = function () {
 
 carouselContainer.onmouseleave = function () {
   autoSlide.start();
-  // console.log("syop");
 };
