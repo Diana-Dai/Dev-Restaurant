@@ -35,6 +35,16 @@
                     transform="translate(-4756.335 4445.792)" fill="currentColor" />
             </symbol>
         </svg>
+        <svg>
+            <symbol id="clock" viewBox="0 0 14 14">
+                <path
+                    d="M7,0a7,7,0,1,0,7,7A7.008,7.008,0,0,0,7,0ZM7,12.511A5.511,5.511,0,1,1,12.511,7,5.517,5.517,0,0,1,7,12.511Z"
+                    fill="#292929" />
+                <path
+                    d="M47.869,20.686H45.086V17.34a.51.51,0,1,0-1.02,0V21.2a.51.51,0,0,0,.51.51h3.293a.51.51,0,0,0,0-1.02Z"
+                    transform="translate(-37.897 -13.528)" fill="#292929" />
+            </symbol>
+        </svg>
     </div>
 
     <header class="absolute top-0 left-0 right-0 bg-transparent z-10">
@@ -128,7 +138,7 @@
             </div>
         </div>
     </div>
-    <div class="about bg-border-wrapper grey bg-secondary">
+    <div class="about bg-border-wrapper grey">
         <div class="container-middle relative">
             <div class="relative">
                 <div class="card-wrapper sm:flex justify-around block">
@@ -702,7 +712,7 @@
                 alt="Picture of the customers">
         </div>
     </div>
-    <div class="recipe bg-border-wrapper grey bg-secondary">
+    <div class="recipe bg-border-wrapper grey">
         <div class="container-middle relative">
             <div class="menu-wrapper flex flex-col align-middle ">
                 <h2 class="uppercase title-md text-center">
@@ -817,7 +827,6 @@
                             Our chefs
                         </strong>
                     </h2>
-
                 </div>
                 <div class="sm:flex -mx-1">
                     <div class="chef-wrapper flex-1 bg-secondary mx-1 ar-1 mt-8 relative">
@@ -926,7 +935,7 @@
             </div>
         </div>
     </div>
-    <div class="infos bg-dark bg-border-wrapper dark">
+    <div class="infos bg-border-wrapper dark">
         <div class="container-middle">
             <div class="menu-wrapper">
                 <div class="info-items-wrapper flex flex-wrap">
@@ -951,6 +960,125 @@
                         <span>Happy customers</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact bg-border-wrapper">
+        <div class="container-middle">
+            <div class="menu-wrapper flex flex-col align-middle">
+                <div class="text-center">
+                    <h2 class="uppercase title-md text-center">
+                        Submit Information to Place Order
+                        <br>
+                        <strong class="title-xl ">
+                            Reserve a table
+                        </strong>
+                    </h2>
+                </div>
+                <div class="story-wrapper relative">
+                    <div class="relative">
+                        <div class="chef-wrapper">
+                            <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
+                        </div>
+                        <div class="story-text-wrapper sm:absolute sm:right-0">
+                            <div class="bg-secondary">
+                                <div class="py-4 px-5">
+                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                                        action="https://formspree.io/f/xgerpapa" method="post">
+                                        <fieldset id="fs-frm-inputs">
+                                            <div class="flex w-full justify-between mb-1">
+                                                <div class="w-half">
+                                                    <label for="full-name">Your Name</label><br>
+                                                    <input type="text" name="name" id="full-name" placeholder=""
+                                                        required="">
+                                                </div>
+                                                <div class="w-half">
+                                                    <label for="email-address">Your Email </label><br>
+                                                    <input type="email" name="_replyto" id="email-address"
+                                                        placeholder="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="flex w-full justify-between mb-1">
+                                                <div class="w-half">
+                                                    <label for="full-name">Phone Number</label><br>
+                                                    <input type="telephone" name="telephone" id="telephone"
+                                                        placeholder="" required="">
+                                                </div>
+                                                <div class="w-half">
+                                                    <label for="email-address">Table For</label><br>
+                                                    <input type="number" id="table" name="table" min="1" max="20"
+                                                        placeholder="1 Person" required="">
+                                                </div>
+                                            </div>
+                                            <div class="flex w-full justify-between mb-1">
+                                                <div class="w-half">
+                                                    <label for="full-name">Select Time</label><br>
+                                                    <input type="time" name="time" id="time" value="13:30"
+                                                        placeholder="" required="">
+                                                </div>
+                                                <div class="w-half">
+                                                    <label for="email-address">Select Date</label><br>
+                                                    <input type="date" id="date" name="date" required=""
+                                                        value="2021-08-16">
+                                                </div>
+                                            </div>
+                                            <div class="mb-1">
+                                                <label for=" message">Message</label><br>
+                                                <textarea class="w-full" rows="5" name="message" id="message"
+                                                    placeholder=""></textarea>
+                                            </div>
+                                            <input type="hidden" name="_subject" id="email-subject"
+                                                value="Contact Form Submission">
+                                        </fieldset>
+                                        <input class="primary-button-long-dark cursor-pointer" type="submit"
+                                            value="Reserve Now">
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs bg-border-wrapper grey">
+        <div class="container-middle">
+            <div class="menu-wrapper flex flex-col align-middle">
+                <div class="text-center">
+                    <h2 class="uppercase title-md text-center">
+                        Last Updated
+                        <br>
+                        <strong class="title-xl ">
+                            Food Blog
+                        </strong>
+                    </h2>
+                </div>
+                <div class="sm:flex -mx-0.5">
+                    <div class="flex-1 mx-0.5 mt-6 ar-3 bg-primary">
+                        <img width="330px" height="277px" src="./imgs/blogs/1.jpg" alt="" srcset="">
+                        <div class="article-wrapper">
+                            <p class="clock-wrapper"><i class="clock"></i>OCTOBER 4, 2018</p>
+                            <div class="article-title">
+                                <h5 class="title-xs font-bold leading-normal">
+                                    Fluffy Japanese Pancakes: Souffle Pancake Recipe
+                                </h5>
+                            </div>
+                            <p class="leading-loose">
+                                The best part of going to the pancake places, aside from eating the pancakes, is
+                                that you get to watch them expertly
+                            </p>
+                            <div>
+                                <span class="line"></span>
+                                <span>Read more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 mx-0.5 mt-6 ar-3"></div>
+                    <div class="flex-1 mx-0.5 mt-6 ar-3"></div>
+                    <div class="flex-1 mx-0.5 mt-6 ar-3"></div>
+                </div>
+
             </div>
         </div>
     </div>
