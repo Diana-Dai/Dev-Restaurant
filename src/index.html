@@ -46,9 +46,8 @@
             </symbol>
         </svg>
     </div>
-     
     <header class="absolute top-0 left-0 right-0 bg-transparent z-10">
-        <div class="container-middle flex justify-between items-center my-0 py-0.48">
+        <div class="container flex justify-between items-center my-0 py-0.48">
             <h4 class="uppercase title-sm"><a href="">Dev Restaurant</a></h4>
             <nav class="hidden sm:block">
                 <ul role="list" class="flex justify-between items-center">
@@ -84,7 +83,7 @@
                             d="M96 256h832c19.2 0 32-12.8 32-32s-12.8-32-32-32H96c-19.2 0-32 12.8-32 32s12.8 32 32 32zM928 480H96c-19.2 0-32 12.8-32 32s12.8 32 32 32h832c19.2 0 32-12.8 32-32s-12.8-32-32-32zM928 768H96c-19.2 0-32 12.8-32 32s12.8 32 32 32h832c19.2 0 32-12.8 32-32s-12.8-32-32-32z" />
                     </svg>
                 </button>
-                <div class="hidden fixed bg-black h-all top-0 right-0 z-10">
+                <div class="hidden fixed bg-black h-screen top-0 right-0 z-10">
                     <div>
                         <ul role="list" class="flex flex-col mt-4">
                             <li>
@@ -114,17 +113,16 @@
 
             </nav>
         </div>
-
     </header>
-    <div class="hero">
-        <div class="container-middle">
+    <div class="hero h-screen bg-cover bg-no-repeat bg-center">
+        <div class="container">
             <div class="absolute">
                 <div>
-                    <span class="sub-title">
+                    <span class="sub-title leading-relaxed">
                         For happy day
                     </span>
                 </div>
-                <h1 class="uppercase title-2xl">
+                <h1 class="uppercase title-2xl leading-tight">
                     <span>enjoy</span>
                     <br>
                     <span>happy meal</span>
@@ -139,7 +137,7 @@
         </div>
     </div>
     <div class="about bg-border-wrapper grey">
-        <div class="container-middle relative">
+        <div class="container relative">
             <div class="relative">
                 <div class="card-wrapper sm:flex justify-around block">
                     <!-- Card -->
@@ -149,7 +147,7 @@
                                 <img class="align-bottom" width="43px" height="43px" src="./imgs/icon-1.svg"
                                     alt="Quality Food">
                             </div>
-                            <h5 class="uppercase title-xs">
+                            <h5 class="uppercase title-xs font-bold">
                                 Quality foods
                             </h5>
                             <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
@@ -165,7 +163,7 @@
                                 <img class="align-bottom" width="55px" height="43px" src="./imgs/icon-2.svg"
                                     alt="Quality Food">
                             </div>
-                            <h5 class="uppercase title-xs">
+                            <h5 class="uppercase title-xs font-bold">
                                 fastest delivery
                             </h5>
                             <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
@@ -181,7 +179,7 @@
                                 <img class="align-bottom" width="43px" height="43px" src="./imgs/icon-3.svg"
                                     alt="Quality Food">
                             </div>
-                            <h5 class="uppercase title-xs">
+                            <h5 class="uppercase title-xs font-bold">
                                 original recipes
                             </h5>
                             <p class="text-center font-bigger">Sit amet, consectetur adipiscing elit quisque eget
@@ -194,13 +192,15 @@
                     </div>
                 </div>
             </div>
-            <div class="story-wrapper relative">
+            <div class="container-inner relative">
                 <div class="relative">
-                    <div class="chef-wrapper">
+                    <div class="half-part">
                         <img width="564.8" height="576" src="./imgs/chef-1.jpg" alt="Our story picture">
                     </div>
-                    <div class="story-text-wrapper sm:absolute sm:right-0">
-                        <div class="py-2.5 px-2 sm:px-5 bg-primary">
+                    <div class="half-part sm:absolute sm:top-0 sm:right-0">
+                        <!-- <div class="py-2.5 px-2 sm:px-5 bg-primary"> -->
+                        <div
+                            class="bg-primary py-2.5 px-2 sm:relative sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:px-5">
                             <h2 class="leading-none title-xl">Discover <br>
                                 <strong class="uppercase title-lg">Our Story</strong>
                             </h2>
@@ -219,7 +219,6 @@
                                 proffer
                                 quick solutions to any problem that may arise in the course of your business day.
                             </p>
-
                             <div class="mt-1.5">
                                 <strong>OUR FOUNDER JOHN PHILLIPE</strong>
                                 <br>
@@ -234,8 +233,8 @@
         </div>
     </div>
     <div class="menu">
-        <div class="container-middle relative">
-            <div class="menu-wrapper flex flex-col align-middle ">
+        <div class="container relative">
+            <div class="container-inner flex flex-col align-middle ">
                 <h2 class="uppercase title-md text-center">
                     let's discover food
                     <br>
@@ -362,8 +361,7 @@
                     </a>
                 </div>
                 <div class="menu-items-wrapper flex flex-wrap">
-                    <div class="menu-item flex flex-col items-center">
-
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
                             <img class="w-full" class="w-full" width="30px" height="30px"
                                 src="./imgs/dishes/menu-banana&Blueberry.jpg"
@@ -379,7 +377,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-burger.jpg"
@@ -396,7 +394,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-pizza.jpg"
@@ -412,7 +410,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-sandwich.jpg"
@@ -428,7 +426,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-icecream.jpg"
@@ -445,7 +443,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-hot-dog.jpg"
@@ -461,7 +459,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
 
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-salad.jpg"
@@ -477,7 +475,7 @@
                         </div>
                         <button class="primary-button-long">Read more</button>
                     </div>
-                    <div class="menu-item flex flex-col items-center">
+                    <div class="menu-item w-1/2 sm:w-1/4 flex flex-col items-center">
                         <div class="img-wrapper relative">
                             <img class="w-full" width="30px" height="30px" src="./imgs/dishes/menu-cheeseburger.jpg"
                                 alt="Meat balls Picture" srcset="">
@@ -500,76 +498,79 @@
         </div>
     </div>
     <div class="set-menu bg-border-wrapper grey relative">
-        <div class="bg-container absolute top-0 bottom-0 left-0 right-0 z-10">
+        <!-- Background -->
+        <div class="bg-container bg-center bg-no-repeat absolute top-0 bottom-0 left-0 right-0 z-10">
         </div>
-        <div class="container-middle h-full relative z-20">
-            <div class="story-wrapper relative">
+        <div class="container h-full relative z-20">
+            <div class="container-inner">
                 <div class="relative">
-                    <div class="chef-wrapper">
+                    <div class="half-part">
                         <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
                     </div>
-                    <div class="story-text-wrapper sm:absolute sm:right-0">
-                        <div class="bg-primary">
-                            <div class="py-2.5 px-2 sm:px-5 ">
-                                <h2 class="leading-snug title-md text-center">Dev Restaurant <br>
-                                    <span class="title-lg">LUNCH SET Menu</span>
-                                </h2>
-                                <div class="flex flex-col items-center mt-1">
-                                    <div class="mb-1 w-full">
-                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
-                                            <p class="flex-grow-0">Southwest beef fillet </p>
-                                            <span class="line flex-grow mx-1"></span>
-                                            <span class="flex-grow-0">$50</span>
-                                        </div>
-                                        <p class="tracking-tighter">
-                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig balsamic
-                                            glaze
-                                        </p>
+                    <div class="half-part sm:absolute sm:top-0 sm:right-0">
+                        <div
+                            class="bg-primary py-2.5 px-2 sm:relative sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:px-5">
+                            <h2 class="leading-snug title-md text-center">Dev Restaurant <br>
+                                <span class="title-lg">LUNCH SET Menu</span>
+                            </h2>
+                            <div class="flex flex-col items-center mt-1">
+                                <div class="mb-1 w-full">
+                                    <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                        <p class="flex-grow-0">Southwest beef fillet </p>
+                                        <span class="line flex-grow mx-1"></span>
+                                        <span class="flex-grow-0">$50</span>
                                     </div>
-                                    <div class="mb-1 w-full">
-                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
-                                            <p class="flex-grow-0">Grilled Angus sirloin </p>
-                                            <span class="line flex-grow mx-1"></span>
-                                            <span class="flex-grow-0">$30</span>
-                                        </div>
-                                        <p class="tracking-tighter">
-                                            caramelized onion & goats cheese en croute, vegetable medley, red wine jus
-                                        </p>
+                                    <p class="tracking-tighter">
+                                        cooked medium on parsnip & potato gratin, seasonal vegetables, fig
+                                        balsamic
+                                        glaze
+                                    </p>
+                                </div>
+                                <div class="mb-1 w-full">
+                                    <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                        <p class="flex-grow-0">Grilled Angus sirloin </p>
+                                        <span class="line flex-grow mx-1"></span>
+                                        <span class="flex-grow-0">$30</span>
                                     </div>
-                                    <div class="mb-1 w-full">
-                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
-                                            <p class="flex-grow-0">Chicken thigh minion</p>
-                                            <span class="line flex-grow mx-1"></span>
-                                            <span class="flex-grow-0">$20</span>
-                                        </div>
-                                        <p class="tracking-tighter">
-                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables, shiraz
-                                            jus
-                                        </p>
+                                    <p class="tracking-tighter">
+                                        caramelized onion & goats cheese en croute, vegetable medley, red wine
+                                        jus
+                                    </p>
+                                </div>
+                                <div class="mb-1 w-full">
+                                    <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                        <p class="flex-grow-0">Chicken thigh minion</p>
+                                        <span class="line flex-grow mx-1"></span>
+                                        <span class="flex-grow-0">$20</span>
                                     </div>
-                                    <div class="mb-1 w-full">
-                                        <div class="leading-loose text-md flex flex-row justify-around items-center">
-                                            <p class="flex-grow-0">Oven roasted chicken breast </p>
-                                            <span class="line flex-grow mx-1"></span>
-                                            <span class="flex-grow-0">$39</span>
-                                        </div>
-                                        <p class="tracking-tighter">
-                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus </p>
+                                    <p class="tracking-tighter">
+                                        stuffed with bocconcini, on soft pesto polenta, seasonal vegetables,
+                                        shiraz
+                                        jus
+                                    </p>
+                                </div>
+                                <div class="mb-1 w-full">
+                                    <div class="leading-loose text-md flex flex-row justify-around items-center">
+                                        <p class="flex-grow-0">Oven roasted chicken breast </p>
+                                        <span class="line flex-grow mx-1"></span>
+                                        <span class="flex-grow-0">$39</span>
                                     </div>
+                                    <p class="tracking-tighter">
+                                        rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="story-wrapper relative">
-                <div class="relative clear-both">
-                    <div class="chef-wrapper sm:absolute right-0">
-                        <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
-                    </div>
-                    <div class="story-text-wrapper">
-                        <div class="bg-primary">
-                            <div class="py-2.5 px-2 sm:px-5 ">
+                <div class="pt-5">
+                    <div class="relative clear-both">
+                        <div class="half-part sm:absolute right-0">
+                            <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
+                        </div>
+                        <div class="half-part">
+                            <div
+                                class="bg-primary py-2.5 px-2 sm:relative sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:px-5 ">
                                 <h2 class="leading-snug title-md text-center">Dev Restaurant <br>
                                     <span class="title-lg">DINNER SET Menu</span>
                                 </h2>
@@ -581,7 +582,8 @@
                                             <span class="flex-grow-0">$50</span>
                                         </div>
                                         <p class="tracking-tighter">
-                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig balsamic
+                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig
+                                            balsamic
                                             glaze
                                         </p>
                                     </div>
@@ -592,7 +594,8 @@
                                             <span class="flex-grow-0">$30</span>
                                         </div>
                                         <p class="tracking-tighter">
-                                            caramelized onion & goats cheese en croute, vegetable medley, red wine jus
+                                            caramelized onion & goats cheese en croute, vegetable medley, red wine
+                                            jus
                                         </p>
                                     </div>
                                     <div class="mb-1 w-full">
@@ -602,7 +605,8 @@
                                             <span class="flex-grow-0">$20</span>
                                         </div>
                                         <p class="tracking-tighter">
-                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables, shiraz
+                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables,
+                                            shiraz
                                             jus
                                         </p>
                                     </div>
@@ -613,7 +617,8 @@
                                             <span class="flex-grow-0">$39</span>
                                         </div>
                                         <p class="tracking-tighter">
-                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus </p>
+                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -627,7 +632,6 @@
         <div class="sm:w-1/2 ar-2">
             <div class="carousel-container">
                 <div class="carousel-wrapper">
-
                     <div class="slide bg-dark w-full h-full relative">
                         <div class="transform -translate-y-1/2 absolute top-1/2 px-2">
                             <div class="flex flex-col items-center">
@@ -713,8 +717,8 @@
         </div>
     </div>
     <div class="recipe bg-border-wrapper grey">
-        <div class="container-middle relative">
-            <div class="menu-wrapper flex flex-col align-middle ">
+        <div class="container relative">
+            <div class="container-inner flex flex-col align-middle ">
                 <h2 class="uppercase title-md text-center">
                     Discover Recipes From Restaurant
                     <br>
@@ -817,8 +821,8 @@
         </div>
     </div>
     <div class="chefs bg-primary">
-        <div class="container-middle relative">
-            <div class="menu-wrapper flex flex-col align-middle ">
+        <div class="container relative">
+            <div class="container-inner flex flex-col align-middle ">
                 <div class="text-center">
                     <h2 class="uppercase title-md text-center">
                         Discover Chefs From Restaurant
@@ -936,25 +940,25 @@
         </div>
     </div>
     <div class="infos bg-border-wrapper dark">
-        <div class="container-middle">
-            <div class="menu-wrapper">
-                <div class="info-items-wrapper flex flex-wrap">
-                    <div class="info-item pb-2 flex flex-col items-center">
+        <div class="container">
+            <div class="container-inner">
+                <div class="info-item-wrapper flex flex-wrap">
+                    <div class="sm:w-1/4 w-1/2 pb-2 flex flex-col items-center">
                         <img width="60px" height="70px" src="./imgs/infos/icon-1.svg" alt="">
                         <p class="title-lg my-0.5">328+</p>
                         <span>Award Wins</span>
                     </div>
-                    <div class="info-item pb-2 flex flex-col items-center">
+                    <div class="sm:w-1/4 w-1/2 pb-2 flex flex-col items-center">
                         <img width="60px" height="70px" src="./imgs/infos/icon-2.svg" alt="">
                         <p class="title-lg my-0.5">354+</p>
                         <span>Qualified stuffs</span>
                     </div>
-                    <div class="info-item pb-2 flex flex-col items-center">
+                    <div class="sm:w-1/4 w-1/2 pb-2 flex flex-col items-center">
                         <img width="60px" height="70px" src="./imgs/infos/icon-3.svg" alt="">
                         <p class="title-lg my-0.5">580+</p>
                         <span>Branches</span>
                     </div>
-                    <div class="info-item pb-2 flex flex-col items-center">
+                    <div class="sm:w-1/4 w-1/2 pb-2 flex flex-col items-center">
                         <img width="60px" height="70px" src="./imgs/infos/icon-4.svg" alt="">
                         <p class="title-lg my-0.5">6028+</p>
                         <span>Happy customers</span>
@@ -964,8 +968,8 @@
         </div>
     </div>
     <div class="contact bg-border-wrapper">
-        <div class="container-middle">
-            <div class="menu-wrapper flex flex-col align-middle">
+        <div class="container">
+            <div class="container-inner flex flex-col align-middle">
                 <div class="text-center">
                     <h2 class="uppercase title-md text-center">
                         Submit Information to Place Order
@@ -975,76 +979,73 @@
                         </strong>
                     </h2>
                 </div>
-                <div class="story-wrapper relative">
-                    <div class="relative">
-                        <div class="chef-wrapper">
-                            <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
-                        </div>
-                        <div class="story-text-wrapper sm:absolute sm:right-0">
-                            <div class="bg-secondary">
-                                <div class="py-3 px-3">
-                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
-                                        action="https://formspree.io/f/xgerpapa" method="post">
-                                        <fieldset id="fs-frm-inputs">
-                                            <div class="flex w-full justify-between mb-1">
-                                                <div class="w-half">
-                                                    <label for="full-name">Your Name</label><br>
-                                                    <input type="text" name="name" id="full-name" placeholder=""
-                                                        required="">
-                                                </div>
-                                                <div class="w-half">
-                                                    <label for="email-address">Your Email </label><br>
-                                                    <input type="email" name="_replyto" id="email-address"
-                                                        placeholder="" required="">
-                                                </div>
-                                            </div>
-                                            <div class="flex w-full justify-between mb-1">
-                                                <div class="w-half">
-                                                    <label for="full-name">Phone Number</label><br>
-                                                    <input type="telephone" name="telephone" id="telephone"
-                                                        placeholder="" required="">
-                                                </div>
-                                                <div class="w-half">
-                                                    <label for="email-address">Table For</label><br>
-                                                    <input type="number" id="table" name="table" min="1" max="20"
-                                                        placeholder="1 Person" required="">
-                                                </div>
-                                            </div>
-                                            <div class="flex w-full justify-between mb-1">
-                                                <div class="w-half">
-                                                    <label for="full-name">Select Time</label><br>
-                                                    <input type="time" name="time" id="time" value="13:30"
-                                                        placeholder="" required="">
-                                                </div>
-                                                <div class="w-half">
-                                                    <label for="email-address">Select Date</label><br>
-                                                    <input type="date" id="date" name="date" required=""
-                                                        value="2021-08-16">
-                                                </div>
-                                            </div>
-                                            <div class="mb-1">
-                                                <label for=" message">Message</label><br>
-                                                <textarea class="w-full" rows="5" name="message" id="message"
-                                                    placeholder=""></textarea>
-                                            </div>
-                                            <input type="hidden" name="_subject" id="email-subject"
-                                                value="Contact Form Submission">
-                                        </fieldset>
-                                        <input class="primary-button-long-dark cursor-pointer" type="submit"
-                                            value="Reserve Now">
-                                    </form>
-                                </div>
+                <div class="relative mt-2">
+                    <div class="half-part">
+                        <img width="564.8" height="576" src="./imgs/menu-1.jpg" alt="Our menu-1 picture">
+                    </div>
+                    <div class="half-part sm:absolute sm:right-0 sm:top-0">
+                        <div
+                            class="bg-secondary py-2.5 px-2 sm:relative sm:top-1/2 sm:transform sm:-translate-y-1/2 sm:px-5">
+                            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                                action="https://formspree.io/f/xgerpapa" method="post">
+                                <fieldset id="fs-frm-inputs">
+                                    <div class="flex w-full justify-between mb-1">
+                                        <div class="w-1/2 mr-0.5">
+                                            <label for="full-name">Your Name</label><br>
+                                            <input class="w-full" type="text" name="name" id="full-name" placeholder=""
+                                                required="">
+                                        </div>
+                                        <div class="w-1/2">
+                                            <label for="email-address">Your Email </label><br>
+                                            <input class="w-full" type="email" name="_replyto" id="email-address"
+                                                placeholder="" required="">
+                                        </div>
+                                    </div>
+                                    <div class="flex w-full justify-between mb-1">
+                                        <div class="w-1/2 mr-0.5">
+                                            <label for="full-name">Phone Number</label><br>
+                                            <input class="w-full" type="telephone" name="telephone" id="telephone"
+                                                placeholder="" required="">
+                                        </div>
+                                        <div class="w-1/2">
+                                            <label for="email-address">Table For</label><br>
+                                            <input class="w-full" type="number" id="table" name="table" min="1" max="20"
+                                                placeholder="1 Person" required="">
+                                        </div>
+                                    </div>
+                                    <div class="flex w-full justify-between mb-1">
+                                        <div class="w-1/2 mr-0.5">
+                                            <label for="full-name">Select Time</label><br>
+                                            <input class="w-full" type="time" name="time" id="time" value="13:30"
+                                                placeholder="" required="">
+                                        </div>
+                                        <div class="w-1/2">
+                                            <label for="email-address">Select Date</label><br>
+                                            <input class="w-full" type="date" id="date" name="date" required=""
+                                                value="2021-08-16">
+                                        </div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for=" message">Message</label><br>
+                                        <textarea class="w-full" rows="5" name="message" id="message"
+                                            placeholder=""></textarea>
+                                    </div>
+                                    <input type="hidden" name="_subject" id="email-subject"
+                                        value="Contact Form Submission">
+                                </fieldset>
+                                <input class="primary-button-long-dark cursor-pointer" type="submit"
+                                    value="Reserve Now">
+                            </form>
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="blogs bg-border-wrapper grey">
-        <div class="container-middle">
-            <div class="menu-wrapper flex flex-col align-middle">
+    <div class="blogs bg-border-wrapper grey pb-9">
+        <div class="container">
+            <div class="container-inner flex flex-col align-middle">
                 <div class="text-center">
                     <h2 class="uppercase title-md text-center">
                         Last Updated
@@ -1062,7 +1063,7 @@
                             <div class="article-wrapper">
                                 <p class="icon-wrapper"><i class="icon clock"></i>OCTOBER 4, 2018</p>
                                 <div class="article-title">
-                                    <h5 class="title-xs font-bold leading-normal">
+                                    <h5 class="title-xxs font-bold leading-normal">
                                         Fluffy Japanese Pancakes: Souffle Pancake Recipe
                                     </h5>
                                 </div>
@@ -1071,7 +1072,8 @@
                                     that you get to watch them expertly
                                 </p>
                                 <div class="mt-0.5">
-                                    <span class="line-dashed"></span>
+                                    <span
+                                        class="inline-block w-3/5 border-b border-dashed border-current align-middle"></span>
                                     <span>Read more</span>
                                 </div>
                             </div>
@@ -1084,15 +1086,16 @@
                             <div class="article-wrapper">
                                 <p class="icon-wrapper"><i class="icon clock"></i>OCTOBER 4, 2018</p>
                                 <div class="article-title">
-                                    <h5 class="title-xs font-bold leading-normal">
-                                        Sunday Brunch: Eggslut’s Fairfax Breakfast Sandwich... </h5>
+                                    <h5 class="title-xxs font-bold leading-normal">
+                                        Sunday Brunch: Eggslut’s Fairfax Breakfast ... </h5>
                                 </div>
                                 <p class="leading-loose">
                                     The best part of going to the pancake places, aside from eating the pancakes, is
                                     that you get to watch them expertly
                                 </p>
                                 <div class="mt-0.5">
-                                    <span class="line-dashed"></span>
+                                    <span
+                                        class="inline-block w-3/5 border-b border-dashed border-current align-middle"></span>
                                     <span>Read more</span>
                                 </div>
                             </div>
@@ -1105,7 +1108,7 @@
                             <div class="article-wrapper">
                                 <p class="icon-wrapper"><i class="icon clock"></i>OCTOBER 4, 2018</p>
                                 <div class="article-title">
-                                    <h5 class="title-xs font-bold leading-normal">
+                                    <h5 class="title-xxs font-bold leading-normal">
                                         Copycat Panda Express Orange Chicken Recipe </h5>
                                 </div>
                                 <p class="leading-loose">
@@ -1113,7 +1116,8 @@
                                     that you get to watch them expertly
                                 </p>
                                 <div class="mt-0.5">
-                                    <span class="line-dashed"></span>
+                                    <span
+                                        class="inline-block w-3/5 border-b border-dashed border-current align-middle"></span>
                                     <span>Read more</span>
                                 </div>
                             </div>
@@ -1126,7 +1130,7 @@
                             <div class="article-wrapper">
                                 <p class="icon-wrapper"><i class="icon clock"></i>OCTOBER 4, 2018</p>
                                 <div class="article-title">
-                                    <h5 class="title-xs font-bold leading-normal">
+                                    <h5 class="title-xxs font-bold leading-normal">
                                         Delfina’s Secret Pork Sugo Recipe
                                     </h5>
                                 </div>
@@ -1135,7 +1139,8 @@
                                     that you get to watch them expertly
                                 </p>
                                 <div class="mt-0.5">
-                                    <span class="line-dashed"></span>
+                                    <span
+                                        class="inline-block w-3/5 border-b border-dashed border-current align-middle"></span>
                                     <span>Read more</span>
                                 </div>
                             </div>
@@ -1147,98 +1152,163 @@
         </div>
     </div>
     <footer class="bg-dark">
-        <div class="container-middle">
-            <div class="menu-wrapper sm:flex justify-center align-middle -mx-1">
-                <div class="flex-1 mx-1">
-                    <div class="title-wrapper">
-                        <h5 class="title-xs font-bold">Dev Restaurant</h5>
+        <div class="container ">
+            <div class="relative">
+                <div class="pt-10 pb-3 sm:flex justify-center align-middle -mx-1">
+                    <div class="flex-1 mx-1">
+                        <div class="title-wrapper">
+                            <h5 class="title-xs font-bold">Dev Restaurant</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed .
+                        </p>
+                        <div class="social-account">
+                            <div class="flex justify-start py-1 ">
+                                <a class="ic ic-f" href="#">
+                                    <svg viewbox="0 0 6.75 13">
+                                        <use xlink:href="#facebook" x="0" y="0" />
+                                    </svg></a>
+                                <a class="ic ic-t" href="#">
+                                    <svg viewBox="0 0 12.313 10">
+                                        <use xlink:href="#twitter" x="0" y="0" />
+                                    </svg></a>
+                                <a class="ic ic-i" href="#">
+                                    <svg viewBox="0 0 12 11.469">
+                                        <use xlink:href="#ins" x="0" y="0" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed .
-                    </p>
-                    <div class="social-account">
-                        <div class="flex justify-start py-1 ">
-                            <a class="ic ic-f" href="#">
-                                <svg viewbox="0 0 6.75 13">
-                                    <use xlink:href="#facebook" x="0" y="0" />
-                                </svg></a>
-                            <a class="ic ic-t" href="#">
-                                <svg viewBox="0 0 12.313 10">
-                                    <use xlink:href="#twitter" x="0" y="0" />
-                                </svg></a>
-                            <a class="ic ic-i" href="#">
-                                <svg viewBox="0 0 12 11.469">
-                                    <use xlink:href="#ins" x="0" y="0" />
-                                </svg>
+                    <div class="flex-1 mx-1">
+                        <div class="title-wrapper">
+                            <h5 class="title-xxs">Open Hours</h5>
+                        </div>
+                        <ul>
+                            <li class="mb-0.5">
+                                <div class="flex justify-around items-center">
+                                    <p class="flex-grow-0 icon-wrapper">
+                                        <i class="icon clock"></i>
+                                        Mondays
+                                    </p>
+                                    <span class="line flex-grow mx-1"></span>
+                                    <span class="flex-grow-0">Closed</span>
+                                </div>
+                            </li>
+                            <li class="mb-0.5">
+                                <div class="flex justify-around items-center">
+                                    <p class="flex-grow-0 icon-wrapper">
+                                        <i class="icon clock"></i>
+                                        Tue - Fri
+                                    </p>
+                                    <span class="line flex-grow mx-1"></span>
+                                    <span class="flex-grow-0">10am - 12am</span>
+                                </div>
+                            </li>
+                            <li class="mb-0.5">
+                                <div class="flex justify-around items-center">
+                                    <p class="flex-grow-0 icon-wrapper">
+                                        <i class="icon clock"></i>
+                                        Sat - Sun
+                                    </p>
+                                    <span class="line flex-grow mx-1"></span>
+                                    <span class="flex-grow-0">7am - 1pm</span>
+                                </div>
+                            </li>
+                            <li class="mb-0.5">
+                                <div class="flex justify-around items-center">
+                                    <p class="flex-grow-0 icon-wrapper">
+                                        <i class="icon clock"></i>
+                                        Public Holidays
+                                    </p>
+                                    <span class="line flex-grow mx-1"></span>
+                                    <span class="flex-grow-0">7am - 1pm</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 mx-1">
+                        <div class="title-wrapper">
+                            <h5 class="title-xxs">Contact Us</h5>
+                        </div>
+                        <ul>
+                            <li class="mb-0.5">
+                                <p class="icon-wrapper">
+                                    <i class="icon phone"></i>
+                                    +1 (123) xxx-xxxx
+                                </p>
+                            </li>
+                            <li class="mb-0.5">
+                                <div class="table">
+                                    <i class="table-cell icon location"></i>
+                                    <p class="table-cell">121/32 Second Street, New York, King Street, New York
+                                        United State</p>
+                                </div>
+                            </li>
+                            <li class="mb-0.5">
+                                <p class="icon-wrapper">
+                                    <i class="icon mail"></i>
+                                    0devdesign.studio@gmail.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 mx-1">
+                        <div class="title-wrapper">
+                            <h5 class="title-xxs">Instagram</h5>
+                        </div>
+                        <div class="flex flex-wrap -m-0.2">
+                            <a class="w-1/3   p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/1.jpg"
+                                    alt="instagram photo">
+                            </a>
+                            <a class="w-1/3  p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/2.jpg"
+                                    alt="instagram photo">
+                            </a>
+                            <a class="w-1/3  p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/3.jpg"
+                                    alt="instagram photo">
+                            </a>
+                            <a class="w-1/3  p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/4.jpg"
+                                    alt="instagram photo">
+                            </a>
+                            <a class="w-1/3  p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/5.jpg"
+                                    alt="instagram photo">
+                            </a>
+                            <a class="w-1/3  p-0.2" href="">
+                                <img class="w-full" width="103px" height="103px" src="./imgs/instagram/6.jpg"
+                                    alt="instagram photo">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 mx-1">
-                    <div class="title-wrapper">
-                        <h5 class="title-xxs">Open Hours</h5>
-                    </div>
-                    <ul>
-                        <li class="mb-0.5">
-                            <div class="flex justify-around items-center">
-                                <p class="flex-grow-0 icon-wrapper">
-                                    <i class="icon clock"></i>
-                                    Mondays
-                                </p>
-                                <span class="line flex-grow mx-1"></span>
-                                <span class="flex-grow-0">Closed</span>
-                            </div>
-                        </li>
-                        <li class="mb-0.5">
-                            <div class="flex justify-around items-center">
-                                <p class="flex-grow-0 icon-wrapper">
-                                    <i class="icon clock"></i>
-                                    Tue - Fri
-                                </p>
-                                <span class="line flex-grow mx-1"></span>
-                                <span class="flex-grow-0">10am - 12am</span>
-                            </div>
-                        </li>
-                        <li class="mb-0.5">
-                            <div class="flex justify-around items-center">
-                                <p class="flex-grow-0 icon-wrapper">
-                                    <i class="icon clock"></i>
-                                    Sat - Sun
-                                </p>
-                                <span class="line flex-grow mx-1"></span>
-                                <span class="flex-grow-0">7am - 1pm</span>
-                            </div>
-                        </li>
-                        <li class="mb-0.5">
-                            <div class="flex justify-around items-center">
-                                <p class="flex-grow-0 icon-wrapper">
-                                    <i class="icon clock"></i>
-                                    Public Holidays
-                                </p>
-                                <span class="line flex-grow mx-1"></span>
-                                <span class="flex-grow-0">7am - 1pm</span>
-                            </div>
-                        </li>
-                    </ul>
+                <hr>
+                <div class="py-1 text-center">
+                    © 2019 All Rights Reserved. Designed By Devdesgin Studio
                 </div>
-                <div class="flex-1 mx-1">
-                    <div class="title-wrapper">
-                        <h5 class="title-xxs">Contact Us</h5>
+                <!-- Newsletter -->
+                <div
+                    class=" sm:p-5 bg-border-wrapper-top dark newsletter transform -translate-y-1/2 sm:flex justify-between absolute top-0 left-0 right-0">
+                    <div class="sm:w-1/2 w-4/5 sm:mx-1 mx-auto sm:pr-5 mt-3 sm:mt-0">
+                        <h3 class="uppercase title-lg font-bold">Join Our Newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla metus.</p>
                     </div>
-                    <ul>
-                        <li class="mb-0.5">
-                            <div class="flex justify-around items-center">
-                                <p class="flex-grow-0 icon-wrapper">
-                                    <i class="icon"></i>
-                                    Mondays
-                                </p>
-                                <span class="line flex-grow mx-1"></span>
-                                <span class="flex-grow-0">Closed</span>
-                            </div>
-                        </li>
-                </div>
-                <div class="flex-1 mx-1">
+                    <div class="sm:w-1/2 w-4/5 sm:mx-1 m-auto ">
+                        <form class="flex justify-between" name="simple-contact-form" accept-charset="utf-8"
+                            action="https://formspree.io/f/xgerpapa" method="post">
+
+                            <input class="flex-1 h-3 px-1 mr-0.5" type="email" name="s-email" id="s-email"
+                                placeholder="Your Email Address" required>
+                            <label for="submit"
+                                class="cursor-pointer text-center leading-3 bg-secondary px-1">SUBSCRIBE</label>
+                            <input class="hidden" type="submit" value="submit" id="submit" name="submit">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
