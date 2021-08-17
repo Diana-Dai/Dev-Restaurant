@@ -34,10 +34,10 @@ a:hover {
 /* Custom class */
 .line {
   display: inline-block;
-  margin-right: 0.05rem;
+  /* margin-right: 0.05rem; */
   vertical-align: middle;
   height: 1px;
-  width: 40px;
+  /* width: 40px; */
   background-color: currentColor;
 }
 .bg-dark {
@@ -297,7 +297,7 @@ header .mobile ul li:last-child {
   }
   .story-text-wrapper > div {
     position: relative;
-    top: 52%;
+    top: 50%;
     transform: translateY(-50%);
   }
 }
@@ -499,14 +499,14 @@ header .mobile ul li:last-child {
 /*Chefs Part */
 /*==========================================*/
 
-.chefs .ic-f svg {
+.ic-f svg {
   width: 0.1rem;
 }
-.chefs .ic-t svg,
-.chefs .ic-i svg {
+.ic-t svg,
+.ic-i svg {
   width: 0.12rem;
 }
-.chefs .ic {
+.ic {
   width: 0.5rem;
   height: 0.5rem;
   line-height: 0.5rem;
@@ -515,7 +515,7 @@ header .mobile ul li:last-child {
   text-align: center;
   transition: 0.3s linear;
 }
-.chefs .ic svg {
+.ic svg {
   display: inline-block;
   vertical-align: middle;
 }
@@ -585,32 +585,83 @@ header .mobile ul li:last-child {
 /*==========================================*/
 /*Blog Part */
 /*==========================================*/
-.blogs .clock-wrapper {
-  font-size: 10px;
+.icon-wrapper {
+  line-height: 0.2rem;
+  font-size: 0.18rem;
 }
-.blogs .clock {
+.icon {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  white-space: nowrap;
-  letter-spacing: -1em;
-  text-indent: -999em;
-  background: url(../imgs/blogs/clock.svg) no-repeat center;
-  background-size: 10px 10px;
+  margin-right: 0.1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  vertical-align: 0.02rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.blogs .clock::before {
+.icon.clock {
+  background-image: url(../imgs/blogs/clock.svg);
+}
+.icon::before {
   content: "\3000";
 }
 
 .blogs img {
-  width: 100%;
   aspect-ratio: 1.19;
 }
 
 .blogs .article-wrapper {
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 
 .blogs .article-wrapper .article-title {
   margin: 0.08rem 0;
+}
+
+.blogs .line-dashed {
+  display: inline-block;
+  width: 60%;
+  border-bottom: 1px dashed currentColor;
+  vertical-align: middle;
+}
+
+/*==========================================*/
+/*Footer Part */
+/*==========================================*/
+footer {
+  color: #a4a4a4;
+}
+footer h5,
+footer .social-account {
+  color: var(--title-color);
+}
+
+footer .title-wrapper {
+  line-height: 0.96rem;
+}
+footer .social-account .ic {
+  margin-right: 0.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+footer .social-account .ic-f {
+  background-color: #3b5999;
+}
+footer .social-account .ic-t {
+  background-color: #55acee;
+}
+
+footer .social-account .ic-i {
+  background-color: #e4405f;
+}
+
+footer .icon.clock {
+  background-image: url(../imgs/clock-grey.svg);
+}
+footer .line {
+  display: inline-block;
 }
