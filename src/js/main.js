@@ -10,6 +10,7 @@ function checkViewPoint(el, scrollTop) {
   if (top <= 0 && top >= -height - viewPortHeight) {
     return true;
   }
+
   return false;
 }
 
@@ -41,8 +42,12 @@ function stickyHeader(header, scrollTop) {
 window.addEventListener("scroll", () => {
   const scrollTop = document.documentElement.scrollTop;
   // Carousel
+  console.log(scrollTop);
   const carouselParent = document.querySelector(".customers");
-  triggerAnimation(checkViewPoint(carouselParent), new CarouselControler());
+  triggerAnimation(
+    checkViewPoint(carouselParent, scrollTop),
+    new CarouselControler()
+  );
 
   // Header
   const header = document.querySelector("header");

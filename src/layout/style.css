@@ -94,7 +94,20 @@
   }
 
   .primary-button-long-dark {
-    @apply uppercase py-2 px-8 bg-black text-gray-light;
+    @apply uppercase py-2 px-8 bg-dark;
+  }
+  /* Hover Animation */
+  .animation-underline {
+    @apply py-1 relative inline-block transition-all duration-200;
+  }
+
+  .animation-underline::before {
+    @apply absolute bottom-0 right-0 w-0 border-b-2 border-solid border-current transition-all duration-500;
+    content: "";
+  }
+
+  .animation-underline:hover::before {
+    @apply w-full left-0;
   }
 
   /* Background border effect */
@@ -138,17 +151,20 @@
   }
   /* card */
   .card-container-wrapper {
-    @apply md:-mt-28 sm:flex flex-wrap justify-around;
+    @apply sm:flex flex-wrap justify-around;
+  }
+  .card-container-wrapper.about {
+    @apply md:-mt-28;
   }
   .card-container-wrapper.chef {
     @apply flex;
   }
-  .card-container {
+  .card-container-wrapper.about .card-container {
     @apply my-6 sm:w-1/2 md:w-1/3 sm:px-3;
   }
 
   .card-container-wrapper.chef .card-container {
-    @apply w-1/2 md:w-1/3 px-3;
+    @apply w-1/2 sm:w-1/2 md:w-1/3 px-3;
   }
   .about-card-wrapper {
     @apply bg-primary md:rounded-b-none rounded-3;
@@ -195,11 +211,20 @@
 /* Header Part */
 /*==========================================*/
 header {
-  @apply transition-all duration-500 bg-white bg-opacity-0;
   z-index: 999;
 }
-header.active {
-  @apply bg-opacity-70 text-black;
+header .part-2 {
+  @apply transition-all duration-500 bg-white bg-opacity-0;
+}
+
+header.active .part-2 {
+  @apply bg-opacity-70 text-black mt-0;
+}
+header .part-1 {
+  @apply block max-h-10 opacity-100;
+}
+header.active .part-1 {
+  @apply max-h-0 opacity-0 hidden;
 }
 /*==========================================*/
 /* Hero Part */
@@ -315,7 +340,7 @@ header.active {
   @apply inline-block  bg-dark w-full h-full relative;
 }
 .carousel-container .pagination {
-  @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply absolute bottom-0 sm:bottom-4 left-1/2 transform -translate-x-1/2;
 }
 .carousel-container .pagination span {
   @apply inline-block mx-1.25 w-2 h-2 border border-solid border-current rounded-full transition-all duration-700;
@@ -331,7 +356,7 @@ header.active {
 /* Chef Card component */
 
 .chef-card-wrapper {
-  @apply bg-secondary mt-24 md:mt-56 ar-2 relative;
+  @apply bg-secondary mt-16 md:mt-40 ar-2 relative;
 }
 .chef-img {
   @apply absolute w-full bottom-10 md:bottom-24;

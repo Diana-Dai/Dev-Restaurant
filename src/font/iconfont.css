@@ -1,15 +1,14 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2759806 */
-  src: url("iconfont.woff2?t=1629702190453") format("woff2"),
-    url("iconfont.woff?t=1629702190453") format("woff"),
-    url("iconfont.ttf?t=1629702190453") format("truetype");
+  src: url("iconfont.woff2?t=1629713485532") format("woff2"),
+    url("iconfont.woff?t=1629713485532") format("woff"),
+    url("iconfont.ttf?t=1629713485532") format("truetype");
 }
 
 .iconfont {
   font-family: "iconfont" !important;
   font-size: inherit;
   font-style: normal;
-  color: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

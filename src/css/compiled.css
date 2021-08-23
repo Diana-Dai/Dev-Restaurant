@@ -648,14 +648,63 @@ svg path {
 
 .primary-button-long-dark {
   --tw-bg-opacity: 1;
-  background-color: rgba(13, 13, 13, var(--tw-bg-opacity));
+  background-color: rgba(41, 41, 41, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.bg-border-wrapper-top.primary-button-long-dark::before,
+  .bg-border-wrapper.primary-button-long-dark::before,
+  .bg-border-wrapper.primary-button-long-dark::after {
+  background-image: url("../imgs/bg-border-dark.svg");
+}
+
+.bg-border-wrapper-top.bg-dark::before,
+  .bg-border-wrapper.bg-dark::before,
+  .bg-border-wrapper.bg-dark::after {
+  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/bg-border-dark.svg");
+}
+
+.primary-button-long-dark {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgba(245, 245, 245, var(--tw-text-opacity));
+}
+
+/* Hover Animation */
+
+.animation-underline {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
+}
+
+.animation-underline::before {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 0px;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: currentColor;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  content: "";
+}
+
+.animation-underline:hover::before {
+  left: 0px;
+  width: 100%;
 }
 
 /* Background border effect */
@@ -716,7 +765,7 @@ svg path {
 }
 
 @media (min-width: 768px) {
-  .card-container-wrapper {
+  .card-container-wrapper.about {
     margin-top: -7rem;
   }
 }
@@ -725,13 +774,13 @@ svg path {
   display: flex;
 }
 
-.card-container {
+.card-container-wrapper.about .card-container {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 640px) {
-  .card-container {
+  .card-container-wrapper.about .card-container {
     width: 50%;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -739,7 +788,7 @@ svg path {
 }
 
 @media (min-width: 768px) {
-  .card-container {
+  .card-container-wrapper.about .card-container {
     width: 33.333333%;
   }
 }
@@ -748,6 +797,12 @@ svg path {
   width: 50%;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .card-container-wrapper.chef .card-container {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -908,19 +963,9 @@ svg path {
   margin-right: 1rem;
 }
 
-.-mx-4 {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
 .-mx-1\.25 {
   margin-left: -0.3rem;
   margin-right: -0.3rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .my-2 {
@@ -1015,10 +1060,6 @@ svg path {
 
 .hidden {
   display: none;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .h-full {
@@ -1255,6 +1296,11 @@ svg path {
   padding: 0.3rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1300,6 +1346,11 @@ svg path {
   padding-bottom: 1.5rem;
 }
 
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1340,6 +1391,11 @@ svg path {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1353,11 +1409,6 @@ svg path {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1468,6 +1519,10 @@ svg path {
 /*==========================================*/
 
 header {
+  z-index: 999;
+}
+
+header .part-2 {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   --tw-bg-opacity: 0;
@@ -1475,13 +1530,25 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-duration: 500ms;
-  z-index: 999;
 }
 
-header.active {
+header.active .part-2 {
+  margin-top: 0px;
   --tw-bg-opacity: 0.7;
   --tw-text-opacity: 1;
   color: rgba(13, 13, 13, var(--tw-text-opacity));
+}
+
+header .part-1 {
+  display: block;
+  max-height: 2.5rem;
+  opacity: 1;
+}
+
+header.active .part-1 {
+  display: none;
+  max-height: 0px;
+  opacity: 0;
 }
 
 /*==========================================*/
@@ -1761,7 +1828,7 @@ header.active {
 
 .carousel-container .pagination {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0px;
   left: 50%;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -1772,7 +1839,12 @@ header.active {
   --tw-scale-y: 1;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-x: -50%;
-  --tw-translate-y: -50%;
+}
+
+@media (min-width: 640px) {
+  .carousel-container .pagination {
+    bottom: 1rem;
+  }
 }
 
 .carousel-container .pagination span {
@@ -1820,12 +1892,12 @@ header.active {
   color: rgba(41, 41, 41, var(--tw-text-opacity));
   aspect-ratio: 0.758;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
   .chef-card-wrapper {
-    margin-top: 14rem;
+    margin-top: 10rem;
   }
 }
 
@@ -2006,11 +2078,6 @@ footer li {
     margin-right: 6rem;
   }
 
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2051,6 +2118,16 @@ footer li {
 
   .md\:w-1\/4 {
     width: 25%;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

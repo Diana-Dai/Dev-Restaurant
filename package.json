@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss style.css -o ./src/css/compiled.css",
-    "watch": "watch 'npm run build:css' ./src/layout"
+    "build:css": "postcss ./src/layout/style.css -o ./src/css/compiled.css",
+    "watch:html": "watch 'npm run build:css' ./src/layout",
+    "start": "npm run watch:html"
   },
   "author": "",
   "license": "ISC",
