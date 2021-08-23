@@ -1,6 +1,8 @@
 const carouselWrapper = document.querySelector(".carousel-wrapper");
 const carouselContainer = document.querySelector(".carousel-container");
 const slidesNum = carouselWrapper.childElementCount;
+// Mark the status of the carousel
+let isCarouselOn = false;
 //Start from the second image
 let currentSlide = 1;
 let preSlide = 0;
@@ -11,6 +13,11 @@ class CarouselControler {
     this.controlButtons = true;
   }
   start() {
+    if (isCarouselOn) {
+      return;
+    }
+    isCarouselOn = true;
+
     // check if it's the first time
     if (!this.instance) {
       this.instance = true;
@@ -22,6 +29,10 @@ class CarouselControler {
     }
   }
   stop() {
+    if (!isCarouselOn) {
+      return;
+    }
+    isCarouselOn = false;
     autoSlide.stop();
   }
 }

@@ -1,47 +1,55 @@
-const carouselParent = document.querySelector(".customers");
-const carouselControler = new CarouselControler();
-
-// Mark the status of the carousel
-var isCarouselOn = false;
-
-function checkViewPoint(el) {
+function checkViewPoint(el, scrollTop) {
   const viewPortHeight =
     window.innerHeight ||
     document.documentElement.clientHeight ||
     document.body.clientHeight;
   const offsetTop = el.offsetTop;
-  const scrollTop = document.documentElement.scrollTop;
+  const height = el.offsetHeight;
   const top = offsetTop - scrollTop - viewPortHeight;
-  if (top <= 0) {
-    if (top <= -viewPortHeight) {
-      if (isCarouselOn) {
-        isCarouselOn = false;
-        isOutViewPoint();
-      }
-    } else {
-      if (!isCarouselOn) {
-        isCarouselOn = true;
-        isInViewPoint();
-      }
-    }
+  // When the element comes into the view
+  if (top <= 0 && top >= -height - viewPortHeight) {
+    return true;
+  }
+
+  return false;
+}
+
+function triggerAnimation(isInViewPoint, animatedElement) {
+  if (isInViewPoint) {
+    animatedElement.start();
   } else {
-    if (isCarouselOn) {
-      isCarouselOn = false;
-      isOutViewPoint();
-    }
+    animatedElement.stop();
   }
 }
 
-//Activate the carousel when the user scroll to the location of carousel
-function isInViewPoint() {
-  carouselControler.start();
+function toggleClass(isInViewPoint, animatedElement) {
+  if (isInViewPoint) {
+    animatedElement.classList.add("active");
+  } else {
+    animatedElement.classList.remove("active");
+  }
 }
 
-//Desactivate the carousel when the user scroll out of the location of carousel
-function isOutViewPoint() {
-  carouselControler.stop();
+function stickyHeader(header, scrollTop) {
+  const height = header.offsetHeight;
+  if (scrollTop > height) {
+    toggleClass(true, header);
+  } else {
+    toggleClass(false, header);
+  }
 }
 
 window.addEventListener("scroll", () => {
-  checkViewPoint(carouselParent);
+  const scrollTop = document.documentElement.scrollTop;
+  // Carousel
+  console.log(scrollTop);
+  const carouselParent = document.querySelector(".customers");
+  triggerAnimation(
+    checkViewPoint(carouselParent, scrollTop),
+    new CarouselControler()
+  );
+
+  // Header
+  const header = document.querySelector("header");
+  stickyHeader(header, scrollTop);
 });
