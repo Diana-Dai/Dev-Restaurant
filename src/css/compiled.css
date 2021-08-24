@@ -509,7 +509,7 @@ a:hover {
 
 .bg-border-wrapper.bg-gray-light::before,
   .bg-border-wrapper.bg-gray-light::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .ar-square {
@@ -656,14 +656,14 @@ svg path {
 .bg-border-wrapper-top.primary-button-long-dark::before,
   .bg-border-wrapper.primary-button-long-dark::before,
   .bg-border-wrapper.primary-button-long-dark::after {
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .bg-border-wrapper-top.bg-dark::before,
   .bg-border-wrapper.bg-dark::before,
   .bg-border-wrapper.bg-dark::after {
-  background-image: url("../imgs/bg-border-dark.svg");
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .primary-button-long-dark {
@@ -737,18 +737,18 @@ svg path {
 
 .bg-border-wrapper::before,
   .bg-border-wrapper::after {
-  background-image: url("../imgs/bg-border.svg");
+  background-image: url("../imgs/border/bg-border.svg");
 }
 
 .bg-border-wrapper.bg-gray-light::before,
   .bg-border-wrapper.bg-gray-light::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .bg-border-wrapper-top.bg-dark::before,
   .bg-border-wrapper.bg-dark::before,
   .bg-border-wrapper.bg-dark::after {
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 /* card */
@@ -1611,7 +1611,7 @@ header.active .part-1 {
 /*==========================================*/
 
 .hero {
-  background-image: url("../imgs/background-1.jpg");
+  background-image: url("../imgs/background/background-1.jpg");
   background-position: center;
 }
 
@@ -1759,7 +1759,7 @@ header.active .part-1 {
 /*==========================================*/
 
 .set-menu .bg-container {
-  background-image: url("../imgs/background-3.png");
+  background-image: url("../imgs/background/background-2.png");
 }
 
 /* Menu Component */
@@ -1863,14 +1863,14 @@ header.active .part-1 {
 .bg-border-wrapper-top.carousel-container .carousel-wrapper .slide::before,
   .bg-border-wrapper.carousel-container .carousel-wrapper .slide::before,
   .bg-border-wrapper.carousel-container .carousel-wrapper .slide::after {
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .bg-border-wrapper-top.bg-dark::before,
   .bg-border-wrapper.bg-dark::before,
   .bg-border-wrapper.bg-dark::after {
-  background-image: url("../imgs/bg-border-dark.svg");
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .carousel-container .carousel-wrapper .slide {
@@ -1931,12 +1931,12 @@ header.active .part-1 {
 
 .bg-border-wrapper.chef-card-wrapper::before,
   .bg-border-wrapper.chef-card-wrapper::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .bg-border-wrapper.bg-gray-light::before,
   .bg-border-wrapper.bg-gray-light::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .chef-card-wrapper {
@@ -1969,12 +1969,12 @@ header.active .part-1 {
 
 .bg-border-wrapper.chef-detail::before,
   .bg-border-wrapper.chef-detail::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .bg-border-wrapper.bg-gray-light::before,
   .bg-border-wrapper.bg-gray-light::after {
-  background-image: url("../imgs/bg-border-grey.svg");
+  background-image: url("../imgs/border/bg-border-grey.svg");
 }
 
 .chef-detail {
@@ -2079,14 +2079,14 @@ header.active .part-1 {
 .bg-border-wrapper-top.chef-detail:hover::before,
   .bg-border-wrapper.chef-detail:hover::before,
   .bg-border-wrapper.chef-detail:hover::after {
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .bg-border-wrapper-top.bg-dark::before,
   .bg-border-wrapper.bg-dark::before,
   .bg-border-wrapper.bg-dark::after {
-  background-image: url("../imgs/bg-border-dark.svg");
-  background-image: url("../imgs/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
+  background-image: url("../imgs/border/bg-border-dark.svg");
 }
 
 .chef-detail:hover .social-account-wrapper {

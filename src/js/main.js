@@ -73,7 +73,8 @@ navbar.querySelector("ul").addEventListener("click", (e) => {
 });
 
 // Menu Tabs Control
-document.getElementById("menu-tabs").addEventListener("click", (e) => {
+const menuTabs = document.getElementById("menu-tabs");
+menuTabs.addEventListener("click", (e) => {
   const tabs = {
     "dinner-tab": "dinner",
     "lunch-tab": "lunch",
@@ -90,18 +91,28 @@ document.getElementById("menu-tabs").addEventListener("click", (e) => {
     } else if (tabs.hasOwnProperty(e.target.parentNode.id)) {
       currentTab = e.target.parentNode.id;
     }
-    console.log(currentTab);
   }
+  // Change the status of the menu tabs
+  menuTabs.childNodes.forEach((item) => {
+    changeNodeStatus(item);
+  });
+  document.getElementById(currentTab).classList.add("active");
+
+  // Change the status of the menu pane
   currentTab = currentTab.split("-")[0];
   currentTab = "#myMenuTabContent" + " #" + currentTab;
   console.log(currentTab);
   document.querySelector("#myMenuTabContent").childNodes.forEach((item) => {
-    // Exclude empty node and text node
-    if (item.nodeName !== "#text" && !/\s/.test(item.nodeValue)) {
-      if (item.classList.contains("active")) {
-        item.classList.remove("active");
-      }
-    }
+    changeNodeStatus(item);
   });
   document.querySelector(currentTab).classList.add("active");
 });
+
+function changeNodeStatus(item) {
+  // Exclude empty node and text node
+  if (item.nodeName !== "#text" && !/\s/.test(item.nodeValue)) {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    }
+  }
+}
