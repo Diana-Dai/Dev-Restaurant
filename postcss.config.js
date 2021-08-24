@@ -13,6 +13,7 @@ module.exports = {
       content: ["./src/layout/*.html"],
       defaultExtractor: (content) =>
         content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
+      safelist: ["navbar-open"],
     }),
   ],
 };

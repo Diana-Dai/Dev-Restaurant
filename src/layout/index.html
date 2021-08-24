@@ -11,483 +11,516 @@
     <link rel="stylesheet" href="../css/compiled.css">
 </head>
 
-<body class="font-sans text-dark w-full h-full">
+<body class="font-sans text-dark w-full h-screen">
+    <div id="navbar" class="navbar fixed top-0 bottom-0 right-0 bg-dark  font-bold">
+        <div class="mt-24 pl-12" style="width: 300px;">
+            <span id="navbar-close"
+                class="iconfont icon-close text-2xl cursor-pointer absolute right-10 top-10 opacity-20 hover:opacity-100 transition-opacity"></span>
+            <ul>
+                <li class="py-3">
+                    <a class="animation-underline" href="index.html">Home</a>
+                </li>
+                <li class="py-3">
+                    <a class="animation-underline" href="#aboutUs">About Us</a>
+                </li>
+                <li class="py-3">
+                    <a class="animation-underline" href="#menu">Menu</a>
+                </li>
+                <li class="py-3">
+                    <a class="animation-underline" href="#recipes">Recipes</a>
+                </li>
+                <li class="py-3">
+                    <a class="animation-underline" href="#chefs">Chef</a>
+                </li>
+                <li class="mt-10">
+                    <a href="#reservation" class="md:hidden button primary-button animation-underline">Reservations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="body" class="body">
+        <header class="text-white fixed top-0 w-full">
+            <div class="part-1 text-sm bg-primary ">
+                <div class="h-full flex items-center justify-center py-3.5">
+                    <a href="https://www.google.com/maps" target="_blank" class="flex icon-text-align mr-4">
+                        <span class="iconfont icon-location"></span>
+                        <p>121/32 Second Street, New York</p>
+                    </a>
+                    <a href="tel:+1-303-499-7111" class="icon-text-align">
+                        <span class="iconfont icon-phone"></span>
+                        +xxxx-xxxx
+                    </a>
+                </div>
+            </div>
+            <div class="part-2 py-6">
+                <div class="container flex justify-between items-center">
+                    <h5 class="uppercase whitespace-nowrap"><a href="index.html">Dev Restaurant</a></h5>
+                    <nav class="hidden lg:block text-sm">
+                        <ul role="list" class="flex justify-between items-center font-bold">
+                            <li class="ml-10">
+                                <a class="animation-underline" href="index.html">Home</a>
+                            </li>
+                            <li class="ml-10">
+                                <a class="animation-underline" href="#aboutUs">About Us</a>
+                            </li>
+                            <li class="ml-10">
+                                <a class="animation-underline" href="#menu">Menu</a>
+                            </li>
+                            <li class="ml-10">
+                                <a class="animation-underline" href="#recipes">Recipes</a>
+                            </li>
+                            <li class="ml-10">
+                                <a class="animation-underline" href="#chefs">Chef</a>
+                            </li>
+                            <li class="ml-10">
+                                <a href="#reservation"
+                                    class="button primary-button animation-underline">Reservations</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--S- Menu of Mobile Version -->
+                    <nav class="lg:hidden text-center text-sm font-bold">
+                        <div class="flex items-center">
+                            <a href="reservation"
+                                class="button primary-button mr-10 md:inline-block hidden animation-underline">Reservations</a>
+                            <span id="navbar-toggler" class="iconfont icon-menu text-3xl cursor-pointer">
+                            </span>
+                        </div>
+                    </nav>
+                    <!--E- Menu of Mobile Version -->
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Section  -->
+            <div class="text-white hero h-screen bg-cover bg-no-repeat bg-center">
+                <div class="container h-full relative">
+                    <div class="top-1/4 relative">
+                        <div class="sm:text-5xl text-4xl py-4 transition-all duration-500">
+                            For happy day
+                        </div>
+                        <h1
+                            class="uppercase text-5xl sm:text-6xl font-medium tracking-wide transition-all duration-500">
+                            <span>enjoy</span>
+                            <br>
+                            <span>happy meal</span>
+                        </h1>
+                        <div class="mt-6">
+                            <a href="#menu">
+                                <span class="line w-6 mr-4 text-gray-300"></span>
+                                check our menu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  About Us Section  -->
+            <div id="aboutUs" class="about bg-border-wrapper bg-gray-light">
+                <div class="container py-1 relative">
+                    <!--S- Card Group -->
+                    <div class="card-container-wrapper about">
+                        <!--- Card Item -->
+                        <div class="card-container">
+                            <div class="about-card-wrapper">
+                                <div class="px-5 py-6 flex flex-col items-center">
+                                    <span class="iconfont icon-like text-4xl"></span>
+                                    <h6 class="uppercase font-bold leading-loose">
+                                        Quality foods
+                                    </h6>
+                                    <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
+                                        maximus velit, non
+                                        eleifend
+                                        libero
+                                        curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Card Item -->
+                        <div class="card-container">
+                            <div class="about-card-wrapper">
+                                <div class="px-5 py-6 flex flex-col items-center">
+                                    <span class="iconfont icon-delivery text-4xl"></span>
+                                    <h6 class="uppercase font-bold whitespace-nowrap leading-loose">
+                                        fastest delivery
+                                    </h6>
+                                    <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
+                                        maximus velit,
+                                        noneleifend
+                                        libero
+                                        curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Card Item -->
+                        <div class="card-container">
+                            <div class="about-card-wrapper">
+                                <div class="px-5 py-6 flex flex-col items-center">
+                                    <span class="iconfont icon-pizza text-4xl text-3xl"></span>
 
-    <header class="text-white fixed top-0 w-full">
-        <div class="part-1 text-sm bg-primary ">
-            <div class="h-full flex items-center justify-center py-3.5">
-                <div class="flex icon-text-align mr-4">
-                    <span class="iconfont icon-location"></span>
-                    <p>121/32 Second Street, New York</p>
-                </div>
-                <p class="icon-text-align">
-                    <span class="iconfont icon-phone"></span>
-                    +xxxx-xxxx
-                </p>
-            </div>
-        </div>
-        <div class="part-2 py-6">
-            <div class="container flex justify-between items-center">
-                <h5 class="uppercase whitespace-nowrap"><a href="">Dev Restaurant</a></h5>
-                <nav class="hidden lg:block text-sm">
-                    <ul role="list" class="flex justify-between items-center font-bold">
-                        <li class="ml-10">
-                            <a class="animation-underline" href="">Home</a>
-                        </li>
-                        <li class="ml-10">
-                            <a class="animation-underline" href="">About Us</a>
-                        </li>
-                        <li class="ml-10">
-                            <a class="animation-underline" href="">Menu</a>
-                        </li>
-                        <li class="ml-10">
-                            <a class="animation-underline" href="">Recipes</a>
-                        </li>
-                        <li class="ml-10">
-                            <a class="animation-underline" href="#">Chef</a>
-                        </li>
-                        <li class="ml-10">
-                            <a href="" class="button primary-button animation-underline">Reservations</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--S- Menu of Mobile Version -->
-                <nav class="lg:hidden text-center text-sm font-bold">
-                    <div class="flex items-center">
-                        <a href=""
-                            class="button primary-button mr-10 md:inline-block hidden animation-underline">Reservations</a>
-                        <span id="navbar-toggler" class="iconfont icon-menu text-3xl">
-                        </span>
-                    </div>
-                    <div class="hidden fixed left-0 right-0 top-0 bottom-0 bg-black bg-opacity-30">
-                        <div class="bg-black h-full fixed right-0 top-0 z-10">
-                            <ul role="list" class="mt-24 pl-12 pr-24 text-gray-300">
-                                <li class="py-3">
-                                    <a class="animation-underline" href="">Home</a>
-                                </li>
-                                <li class="py-3">
-                                    <a class="animation-underline" href="">About Us</a>
-                                </li>
-                                <li class="py-3">
-                                    <a class="animation-underline" href="">Menu</a>
-                                </li>
-                                <li class="py-3">
-                                    <a class="animation-underline" href="">Recipes</a>
-                                </li>
-                                <li class="py-3">
-                                    <a class="animation-underline" href="#">Chef</a>
-                                </li>
-                                <li class="mt-10">
-                                    <a href="" class="md:hidden button primary-button">Reservations</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!--E- Menu of Mobile Version -->
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- Hero Section  -->
-        <div class="text-white hero h-screen bg-cover bg-no-repeat bg-center">
-            <div class="container h-full relative">
-                <div class="top-1/4 relative">
-                    <div class="sm:text-5xl text-4xl py-4 transition-all duration-500">
-                        For happy day
-                    </div>
-                    <h1 class="uppercase text-5xl sm:text-6xl font-medium tracking-wide transition-all duration-500">
-                        <span>enjoy</span>
-                        <br>
-                        <span>happy meal</span>
-                    </h1>
-                    <div class="mt-6">
-                        <a href="">
-                            <span class="line w-6 mr-4 text-gray-300"></span>
-                            check our menu
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--  About Us Section  -->
-        <div class="about bg-border-wrapper bg-gray-light">
-            <div class="container py-1 relative">
-                <!--S- Card Group -->
-                <div class="card-container-wrapper about">
-                    <!--- Card Item -->
-                    <div class="card-container">
-                        <div class="about-card-wrapper">
-                            <div class="px-5 py-6 flex flex-col items-center">
-                                <span class="iconfont icon-like text-4xl"></span>
-                                <h6 class="uppercase font-bold leading-loose">
-                                    Quality foods
-                                </h6>
-                                <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
-                                    maximus velit, non
-                                    eleifend
-                                    libero
-                                    curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                                    <h6 class="uppercase font-bold  leading-loose">
+                                        original recipes
+                                    </h6>
+                                    <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
+                                        maximus velit,
+                                        non
+                                        eleifend
+                                        libero
+                                        curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--- Card Item -->
-                    <div class="card-container">
-                        <div class="about-card-wrapper">
-                            <div class="px-5 py-6 flex flex-col items-center">
-                                <span class="iconfont icon-delivery text-4xl"></span>
-                                <h6 class="uppercase font-bold whitespace-nowrap leading-loose">
-                                    fastest delivery
-                                </h6>
-                                <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
-                                    maximus velit,
-                                    noneleifend
-                                    libero
-                                    curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
+                    <!--E-Card Group -->
+                    <!--S-Our Story Part -->
+                    <div class="container-inner">
+                        <div class="special-wrapper">
+                            <div class="half-part-img">
+                                <img class="w-full" width="564.8" height="576" src="../imgs/chef-1.jpg"
+                                    alt="Our story picture">
                             </div>
-                        </div>
-                    </div>
-                    <!--- Card Item -->
-                    <div class="card-container">
-                        <div class="about-card-wrapper">
-                            <div class="px-5 py-6 flex flex-col items-center">
-                                <span class="iconfont icon-pizza text-4xl text-3xl"></span>
-
-                                <h6 class="uppercase font-bold  leading-loose">
-                                    original recipes
-                                </h6>
-                                <p class="text-center">Sit amet, consectetur adipiscing elit quisque eget
-                                    maximus velit,
-                                    non
-                                    eleifend
-                                    libero
-                                    curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--E-Card Group -->
-                <!--S-Our Story Part -->
-                <div class="container-inner">
-                    <div class="special-wrapper">
-                        <div class="half-part-img">
-                            <img class="w-full" width="564.8" height="576" src="../imgs/chef-1.jpg"
-                                alt="Our story picture">
-                        </div>
-                        <div class="half-part-text right">
-                            <div class="bg-primary text-center lg:text-left special-text-wrapper">
-                                <h3 class="lg:leading-snug leading-none">Discover
-                                    <strong class="block uppercase text-4xl">Our Story</strong>
-                                </h3>
-                                <br>
-                                <p>
-                                    One of the notable character traits of a successful small restaurant owner is
-                                    the
-                                    ability to
-                                    easily solve problems. Problem-solving is a skill and most of the time comes
-                                    with
-                                    being
-                                    open-minded.
+                            <div class="half-part-text right">
+                                <div class="bg-primary text-center lg:text-left special-text-wrapper">
+                                    <h3 class="lg:leading-snug leading-none">Discover
+                                        <strong class="block uppercase text-4xl">Our Story</strong>
+                                    </h3>
                                     <br>
-                                    <br>
-                                    Successful entrepreneurs are open-minded people and as such good optimists,
-                                    critical
-                                    thinkers and problem solvers. As a small restaurant owner, you need to be able
-                                    to
-                                    proffer
-                                    quick solutions to any problem that may arise in the course of your business
-                                    day.
-                                </p>
-                                <div class="mt-9">
-                                    <strong>OUR FOUNDER JOHN PHILLIPE</strong>
-                                    <br>
-                                    <span class="text-4xl">
-                                        Devil Roy Barman
-                                    </span>
+                                    <p>
+                                        One of the notable character traits of a successful small restaurant owner is
+                                        the
+                                        ability to
+                                        easily solve problems. Problem-solving is a skill and most of the time comes
+                                        with
+                                        being
+                                        open-minded.
+                                        <br>
+                                        <br>
+                                        Successful entrepreneurs are open-minded people and as such good optimists,
+                                        critical
+                                        thinkers and problem solvers. As a small restaurant owner, you need to be able
+                                        to
+                                        proffer
+                                        quick solutions to any problem that may arise in the course of your business
+                                        day.
+                                    </p>
+                                    <div class="mt-9">
+                                        <strong>OUR FOUNDER JOHN PHILLIPE</strong>
+                                        <br>
+                                        <span class="text-4xl">
+                                            Devil Roy Barman
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--E-Our Story Part -->
                 </div>
-                <!--E-Our Story Part -->
             </div>
-        </div>
-        <div class="dishes">
-            <div class="container relative">
-                <div class="container-inner flex flex-col align-middle">
-                    <h4 class="uppercase text-center">
-                        Let's discover food
-                        <br>
-                        <strong class="text-4xl">
-                            special dishes today
-                        </strong>
-                    </h4>
-                    <!--  Menu Tabs Part -->
-                    <ul class="menu-tabs rounded-3 text-xs md:text-base  sm:mx-24 lg:mx-48  my-6 flex justify-center ">
-                        <li id="dinner-tab" class="nav-link active rounded-tl-3 rounded-bl-3">
-                            <span class="iconfont icon-dinner text-lg md:text-4xl"></span>
-                            <span class="mt-1.25">Dinner</span>
-                        </li>
-                        <li id="lunch-tab" class="nav-link ">
-                            <span class="iconfont icon-lunch text-lg md:text-4xl"></span>
+            <div id="menu" class="dishes">
+                <div class="container relative">
+                    <div class="container-inner flex flex-col align-middle">
+                        <h4 class="uppercase text-center">
+                            Let's discover food
+                            <br>
+                            <strong class="text-4xl">
+                                special dishes today
+                            </strong>
+                        </h4>
+                        <!--  Menu Tabs Part -->
+                        <ul id="menu-tabs"
+                            class="menu-tabs rounded-3 text-xs md:text-base  sm:mx-24 lg:mx-48  my-6 flex justify-center ">
+                            <li id="dinner-tab" class="nav-link active rounded-tl-3 rounded-bl-3">
+                                <span class="iconfont icon-dinner text-lg md:text-4xl"></span>
+                                <span class="mt-1.25">Dinner</span>
+                            </li>
+                            <li id="lunch-tab" class="nav-link ">
+                                <span class="iconfont icon-lunch text-lg md:text-4xl"></span>
 
-                            <span class="mt-1.25">Lunch</span>
-                        </li>
-                        <li id="brunch-tab"
-                            class="transition-colors duration-500 ar-square flex-1 text-center flex flex-col justify-center items-center">
-                            <span class="iconfont icon-burger text-lg md:text-4xl"></span>
-                            <span class="mt-1.25">Brunch</span>
-                        </li>
-                        <li id="desert-tab" class="nav-link">
-                            <span class="iconfont icon-desert text-lg md:text-4xl"></span>
+                                <span class="mt-1.25">Lunch</span>
+                            </li>
+                            <li id="brunch-tab" class="nav-link">
+                                <span class="iconfont icon-burger text-lg md:text-4xl"></span>
+                                <span class="mt-1.25">Brunch</span>
+                            </li>
+                            <li id="desert-tab" class="nav-link">
+                                <span class="iconfont icon-desert text-lg md:text-4xl"></span>
 
-                            <span class="mt-1.25">Desert</span>
-                        </li>
-                        <li id="wine-tab" class="nav-link rounded-tr-3 rounded-br-3">
-                            <span class="iconfont icon-wine text-lg md:text-4xl"></span>
-                            <span>Wine</span>
-                        </li>
-                    </ul>
-                    <!--E- Menu Tabs Part -->
-                    <!-- Menu Part -->
-                    <div class="tab-content" id="myMenuTabContent">
-                        <!--Dinner Menu Part -->
-                        <div class="tab-pane active" id="dinner">
-                            <div class="-mt-0.4 flex flex-wrap">
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-banana&Blueberry.jpg"
-                                            alt="Banana & Blueberry French Toast Picture" srcset="">
-                                        <div class="price-wrapper">
-                                            <span class="">$50</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Banana French Toast </h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-burger.jpg"
-                                            alt="Chesse Burger Picture" srcset="">
-                                        <div class="price-wrapper">
-                                            <span class="">$39</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Chesse Burger </h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-pizza.jpg" alt="Pizza"
-                                            srcset="">
-                                        <div class="price-wrapper">
-                                            <span class="">$30</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Pizza </h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-sandwich.jpg"
-                                            alt="sandwich Picture" srcset="">
-                                        <div class="price-wrapper  ">
-                                            <span class="">$20</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Sandwich</h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-icecream.jpg"
-                                            alt="Icecream Picture" srcset="">
-                                        <div class="price-wrapper  ">
-                                            <span class="">$35</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="text-wrapper">
-                                        <h6>Icecream </h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-hot-dog.jpg"
-                                            alt="Hot Dog Picture" srcset="">
-                                        <div class="price-wrapper  ">
-                                            <span class="">$35</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Hot Dog</h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-salad.jpg"
-                                            alt="Salad Picture" srcset="">
-                                        <div class="price-wrapper  ">
-                                            <span class="">$20</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Salad </h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                                <div class="menu-item">
-                                    <div class="img-wrapper">
-                                        <img width="30px" height="30px" src="../imgs/dishes/menu-cheeseburger.jpg"
-                                            alt="Meat balls Picture" srcset="">
-                                        <div class="price-wrapper  ">
-                                            <span class="">$68</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <h6>Meat Balls</h6>
-                                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
-                                            Pinnately.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!--Lunch Menu Part -->
-                        <div class="tab-pane" id="lunch">
-
-                        </div>
-                        <!--Brunch Menu Part -->
-                        <div class="tab-pane" id="brunch">
+                                <span class="mt-1.25">Desert</span>
+                            </li>
+                            <li id="wine-tab" class="nav-link rounded-tr-3 rounded-br-3">
+                                <span class="iconfont icon-wine text-lg md:text-4xl"></span>
+                                <span>Wine</span>
+                            </li>
+                        </ul>
+                        <!--E- Menu Tabs Part -->
+                        <!-- Menu Part -->
+                        <div class="tab-content" id="myMenuTabContent">
                             <!--Dinner Menu Part -->
-                        </div>
-                        <!--Desert Menu Part -->
-                        <div class="tab-pane" id="desert">
-                        </div>
-                        <!--Wine Menu Part -->
-                        <div class="tab-pane" id="wine">
+                            <div class="tab-pane active" id="dinner">
+                                <div class="-mt-0.4 flex flex-wrap">
 
-                        </div>
-                    </div>
-                    <!--E-Menu Part -->
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-burger.jpg"
+                                                alt="Chesse Burger Picture" srcset="">
+                                            <div class="price-wrapper">
+                                                <span class="">$39</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Chesse Burger </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
 
-                    <div class="text-center mt-2.5">
-                        <button class="button primary-button-long-dark">View All</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Menu Part -->
-        <div class="set-menu bg-border-wrapper bg-gray-light relative">
-            <!-- Background -->
-            <div class="bg-container bg-center bg-no-repeat absolute top-0 bottom-0 left-0 right-0 z-10">
-            </div>
-            <div class="container h-full relative z-20">
-                <div class="container-inner">
-                    <div class="special-wrapper">
-                        <div class="half-part-img">
-                            <img class="w-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
-                                alt="Our menu-1 picture">
-                        </div>
-                        <div class="half-part-text right">
-                            <div class=" bg-primary special-text-wrapper">
-                                <h4 class="text-center uppercase font-bold">LUNCH SET Menu
-                                </h4>
-                                <div class=" menu-detail-wrapper">
-                                    <div class="menu-detail">
-                                        <div class="menu-dish">
-                                            <p>Southwest beef fillet </p>
-                                            <span class="line"></span>
-                                            <span class="price">$50</span>
-                                        </div>
-                                        <p class="tracking-tighter">
-                                            cooked medium on parsnip & potato gratin, seasonal vegetables, fig
-                                            balsamic
-                                            glaze
-                                        </p>
                                     </div>
-                                    <div class="menu-detail">
-                                        <div class="menu-dish">
-                                            <p>Grilled Angus sirloin </p>
-                                            <span class="line"></span>
-                                            <span class="price">$30</span>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-pizza.jpg"
+                                                alt="Pizza" srcset="">
+                                            <div class="price-wrapper">
+                                                <span class="">$30</span>
+                                            </div>
                                         </div>
-                                        <p class="tracking-tighter">
-                                            caramelized onion & goats cheese en croute, vegetable medley, red wine
-                                            jus
-                                        </p>
+                                        <div class="text-wrapper">
+                                            <h6>Pizza </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
                                     </div>
-                                    <div class="menu-detail">
-                                        <div class="menu-dish">
-                                            <p>Chicken thigh minion</p>
-                                            <span class="line"></span>
-                                            <span class="price">$20</span>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-sandwich.jpg"
+                                                alt="sandwich Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$20</span>
+                                            </div>
                                         </div>
-                                        <p class="tracking-tighter">
-                                            stuffed with bocconcini, on soft pesto polenta, seasonal vegetables,
-                                            shiraz
-                                            jus
-                                        </p>
+                                        <div class="text-wrapper">
+                                            <h6>Sandwich</h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
                                     </div>
-                                    <div class="mb-1 w-full">
-                                        <div class="menu-dish">
-                                            <p>Oven roasted chicken breast </p>
-                                            <span class="line"></span>
-                                            <span class="price">$39</span>
+
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-salad.jpg"
+                                                alt="Salad Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$20</span>
+                                            </div>
                                         </div>
-                                        <p class="tracking-tighter">
-                                            rustic cut herb potato wedges, steamed vegetables, porcini mushroom jus
-                                        </p>
+                                        <div class="text-wrapper">
+                                            <h6>Salad </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-cheeseburger.jpg"
+                                                alt="Meat balls Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$68</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Meat Balls</h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Lunch Menu Part -->
+                            <div class="tab-pane" id="lunch">
+                                <div class="-mt-0.4 flex flex-wrap">
+
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-salad.jpg"
+                                                alt="Salad Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$20</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Salad </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-cheeseburger.jpg"
+                                                alt="Meat balls Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$68</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Meat Balls</h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-salad.jpg"
+                                                alt="Salad Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$20</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Salad </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-cheeseburger.jpg"
+                                                alt="Meat balls Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$68</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Meat Balls</h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--Brunch Menu Part -->
+                            <div class="tab-pane" id="brunch">
+                                <div class="-mt-0.4 flex flex-wrap">
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-icecream.jpg"
+                                                alt="Icecream Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$35</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-wrapper">
+                                            <h6>Icecream </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+
+                                            <img width="30px" height="30px" src="../imgs/dishes/menu-hot-dog.jpg"
+                                                alt="Hot Dog Picture" srcset="">
+                                            <div class="price-wrapper  ">
+                                                <span class="">$35</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Hot Dog</h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Desert Menu Part -->
+                            <div class="tab-pane" id="desert">
+                                <div class="-mt-0.4 flex flex-wrap">
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px"
+                                                src="../imgs/dishes/menu-banana&Blueberry.jpg"
+                                                alt="Banana & Blueberry French Toast Picture" srcset="">
+                                            <div class="price-wrapper">
+                                                <span class="">$50</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>Banana French Toast </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Wine Menu Part -->
+                            <div class="tab-pane" id="wine">
+                                <div class="-mt-0.4 flex flex-wrap">
+                                    <div class="menu-item">
+                                        <div class="img-wrapper">
+                                            <img width="30px" height="30px" src="../imgs/dishes/wine.jpg"
+                                                alt="Red Wine Picture" srcset="">
+                                            <div class="price-wrapper">
+                                                <span class="">$38</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-wrapper">
+                                            <h6>
+                                                Red Wine Bottle Candle
+                                            </h6>
+                                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Fuidhir
+                                                Pinnately.</p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--E-Menu Part -->
+                        <!-- 
+                        <div class="text-center mt-2.5">
+                            <button class="button primary-button-long-dark">View All</button>
+                        </div> -->
                     </div>
-                    <div class="pt-12">
-                        <div class="clear-both special-wrapper">
-                            <div class="half-part-img right">
-                                <img class="w-full h-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
+                </div>
+            </div>
+            <!-- Menu Part -->
+            <div class="set-menu bg-border-wrapper bg-gray-light relative">
+                <!-- Background -->
+                <div class="bg-container bg-center bg-no-repeat absolute top-0 bottom-0 left-0 right-0 z-10">
+                </div>
+                <div class="container h-full relative z-20">
+                    <div class="container-inner">
+                        <div class="special-wrapper">
+                            <div class="half-part-img">
+                                <img class="w-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
                                     alt="Our menu-1 picture">
                             </div>
-                            <div class="half-part-text ">
-                                <div class="bg-primary special-text-wrapper">
-                                    <h4 class="text-center uppercase font-bold">DINNER SET Menu
+                            <div class="half-part-text right">
+                                <div class=" bg-primary special-text-wrapper">
+                                    <h4 class="text-center uppercase font-bold">LUNCH SET Menu
                                     </h4>
-                                    <div class="menu-detail-wrapper">
+                                    <div class=" menu-detail-wrapper">
                                         <div class="menu-detail">
                                             <div class="menu-dish">
                                                 <p>Southwest beef fillet </p>
                                                 <span class="line"></span>
                                                 <span class="price">$50</span>
                                             </div>
-                                            <p class="description tracking-tighter">
+                                            <p class="tracking-tighter">
                                                 cooked medium on parsnip & potato gratin, seasonal vegetables, fig
                                                 balsamic
                                                 glaze
@@ -497,7 +530,7 @@
                                             <div class="menu-dish">
                                                 <p>Grilled Angus sirloin </p>
                                                 <span class="line"></span>
-                                                <span class="price"> $30</span>
+                                                <span class="price">$30</span>
                                             </div>
                                             <p class="tracking-tighter">
                                                 caramelized onion & goats cheese en croute, vegetable medley, red wine
@@ -516,7 +549,7 @@
                                                 jus
                                             </p>
                                         </div>
-                                        <div class="menu-detail">
+                                        <div class="mb-1 w-full">
                                             <div class="menu-dish">
                                                 <p>Oven roasted chicken breast </p>
                                                 <span class="line"></span>
@@ -530,583 +563,651 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Customers Part -->
-        <div class="customers  relative">
-            <div class="md:w-1/2 ar-3">
-                <div class="carousel-container">
-                    <div class="carousel-wrapper">
-                        <div class="slide">
-                            <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
-                                <div class="flex flex-col items-center">
-                                    <div class="inline-block w-9">
-                                        <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
-                                            height="39.375" viewBox="0 0 45 39.375">
-                                            <path
-                                                d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
-                                                transform="translate(543.466 -4672.049)" fill="#fff" />
-                                        </svg>
-                                    </div>
-                                    <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
-                                        Time We Start
-                                        Something
-                                        New
-                                        It Is Exciting And
-                                        We
-                                        Are
-                                        Very
-                                        Motivated
-                                        And
-                                        Committed.
-                                    </p>
-                                    <span class="text-base">
-                                        <span class="line"></span>
-                                        Devil Roy Barman
-                                    </span>
+                        <div class="pt-12">
+                            <div class="clear-both special-wrapper">
+                                <div class="half-part-img right">
+                                    <img class="w-full h-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
+                                        alt="Our menu-1 picture">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
-                                <div class="flex flex-col items-center">
-                                    <div class="inline-block w-9">
-                                        <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
-                                            height="39.375" viewBox="0 0 45 39.375">
-                                            <path
-                                                d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
-                                                transform="translate(543.466 -4672.049)" fill="#fff" />
-                                        </svg>
+                                <div class="half-part-text ">
+                                    <div class="bg-primary special-text-wrapper">
+                                        <h4 class="text-center uppercase font-bold">DINNER SET Menu
+                                        </h4>
+                                        <div class="menu-detail-wrapper">
+                                            <div class="menu-detail">
+                                                <div class="menu-dish">
+                                                    <p>Southwest beef fillet </p>
+                                                    <span class="line"></span>
+                                                    <span class="price">$50</span>
+                                                </div>
+                                                <p class="description tracking-tighter">
+                                                    cooked medium on parsnip & potato gratin, seasonal vegetables, fig
+                                                    balsamic
+                                                    glaze
+                                                </p>
+                                            </div>
+                                            <div class="menu-detail">
+                                                <div class="menu-dish">
+                                                    <p>Grilled Angus sirloin </p>
+                                                    <span class="line"></span>
+                                                    <span class="price"> $30</span>
+                                                </div>
+                                                <p class="tracking-tighter">
+                                                    caramelized onion & goats cheese en croute, vegetable medley, red
+                                                    wine
+                                                    jus
+                                                </p>
+                                            </div>
+                                            <div class="menu-detail">
+                                                <div class="menu-dish">
+                                                    <p>Chicken thigh minion</p>
+                                                    <span class="line"></span>
+                                                    <span class="price">$20</span>
+                                                </div>
+                                                <p class="tracking-tighter">
+                                                    stuffed with bocconcini, on soft pesto polenta, seasonal vegetables,
+                                                    shiraz
+                                                    jus
+                                                </p>
+                                            </div>
+                                            <div class="menu-detail">
+                                                <div class="menu-dish">
+                                                    <p>Oven roasted chicken breast </p>
+                                                    <span class="line"></span>
+                                                    <span class="price">$39</span>
+                                                </div>
+                                                <p class="tracking-tighter">
+                                                    rustic cut herb potato wedges, steamed vegetables, porcini mushroom
+                                                    jus
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
-                                        Time We Start
-                                        Something
-                                        New
-                                        It Is Exciting And
-                                        We
-                                        Are
-                                        Very
-                                        Motivated
-                                        And
-                                        Committed.
-                                    </p>
-                                    <span class="text-base">
-                                        <span class="line"></span>
-                                        Devil Roy Barman
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
-                                <div class="flex flex-col items-center">
-                                    <div class="inline-block w-9">
-                                        <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
-                                            height="39.375" viewBox="0 0 45 39.375">
-                                            <path
-                                                d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
-                                                transform="translate(543.466 -4672.049)" fill="#fff" />
-                                        </svg>
-                                    </div>
-                                    <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
-                                        Time We Start
-                                        Something
-                                        New
-                                        It Is Exciting And
-                                        We
-                                        Are
-                                        Very
-                                        Motivated
-                                        And
-                                        Committed.
-                                    </p>
-                                    <span class="text-base">
-                                        <span class="line"></span>
-                                        Devil Roy Barman
-                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pagination">
-                        <span class="btn1 selected"></span>
-                        <span class="btn2"></span>
-                        <span class="btn3"></span>
-                    </div>
                 </div>
             </div>
-            <div class="md:w-1/2 ar-3 md:absolute right-0 top-0">
-                <img class="w-full h-full" width="977px" height="602px" src="../imgs/customers.png"
-                    alt="Picture of the customers">
-            </div>
-        </div>
-        <!-- Recipes Part -->
-        <div class="recipe bg-border-wrapper bg-gray-light">
-            <div class="container relative">
-                <div class="container-inner flex flex-col align-middle ">
-                    <h4 class="uppercase text-center">
-                        Discover Recipes From Restaurant
-                        <br>
-                        <strong class="text-4xl">
-                            RECENT RECIPES
-                        </strong>
-                    </h4>
-                    <div class="my-6 mx-4 md:mx-40">
-                        <div class="flex flex-wrap">
-                            <ul class="w-1/2 md:w-1/4">
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" width="285px" height="285px"
-                                            src="../imgs/recipes/recipe-1.jpg" alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-2.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-1" src="../imgs/recipes/recipe-3.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-4.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="w-1/2 md:w-1/4">
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-5.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-1" src="../imgs/recipes/recipe-6.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-7.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-9.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="w-1/2 md:w-1/4">
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-1" src="../imgs/recipes/recipe-8.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-10.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-15.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-11.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="w-1/2 md:w-1/4">
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-6.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-13.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-1" src="../imgs/recipes/recipe-14.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                                <li class="p-1.25">
-                                    <a href="#">
-                                        <img class="w-full ar-square" src="../imgs/recipes/recipe-15.jpg"
-                                            alt="recipe picture">
-                                    </a>
-                                </li>
-                            </ul>
+            <!-- Customers Part -->
+            <div class="customers relative">
+                <div class="md:w-1/2 ar-3">
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="slide">
+                                <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
+                                    <div class="flex flex-col items-center">
+                                        <div class="inline-block w-9">
+                                            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
+                                                height="39.375" viewBox="0 0 45 39.375">
+                                                <path
+                                                    d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
+                                                    transform="translate(543.466 -4672.049)" fill="#fff" />
+                                            </svg>
+                                        </div>
+                                        <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
+                                            Time We Start
+                                            Something
+                                            New
+                                            It Is Exciting And
+                                            We
+                                            Are
+                                            Very
+                                            Motivated
+                                            And
+                                            Committed.
+                                        </p>
+                                        <span class="text-base">
+                                            <span class="line"></span>
+                                            Devil Roy Barman
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
+                                    <div class="flex flex-col items-center">
+                                        <div class="inline-block w-9">
+                                            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
+                                                height="39.375" viewBox="0 0 45 39.375">
+                                                <path
+                                                    d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
+                                                    transform="translate(543.466 -4672.049)" fill="#fff" />
+                                            </svg>
+                                        </div>
+                                        <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
+                                            Time We Start
+                                            Something
+                                            New
+                                            It Is Exciting And
+                                            We
+                                            Are
+                                            Very
+                                            Motivated
+                                            And
+                                            Committed.
+                                        </p>
+                                        <span class="text-base">
+                                            <span class="line"></span>
+                                            Devil Roy Barman
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="transform -translate-y-1/2 absolute top-1/2 px-6">
+                                    <div class="flex flex-col items-center">
+                                        <div class="inline-block w-9">
+                                            <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="45"
+                                                height="39.375" viewBox="0 0 45 39.375">
+                                                <path
+                                                    d="M-525.009,4673.279a4.076,4.076,0,0,1,1.231,2.989v21.093a13.763,13.763,0,0,1-1.89,7.032,13.975,13.975,0,0,1-5.142,5.141,13.766,13.766,0,0,1-7.031,1.89h-.7a2.037,2.037,0,0,1-1.494-.615,2.036,2.036,0,0,1-.615-1.5V4705.1a2.032,2.032,0,0,1,.615-1.494,2.033,2.033,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.4,5.4,0,0,0,1.67-3.955v-5.625h-7.031a4.06,4.06,0,0,1-2.988-1.23,4.06,4.06,0,0,1-1.231-2.988v-11.25a4.068,4.068,0,0,1,1.231-2.989,4.065,4.065,0,0,1,2.988-1.23H-528A4.072,4.072,0,0,1-525.009,4673.279Zm25.313,0a4.078,4.078,0,0,1,1.23,2.989v21.093a13.754,13.754,0,0,1-1.89,7.032,13.965,13.965,0,0,1-5.141,5.141,13.771,13.771,0,0,1-7.031,1.89h-.7a2.039,2.039,0,0,1-1.494-.615,2.04,2.04,0,0,1-.615-1.5V4705.1a2.036,2.036,0,0,1,.615-1.494,2.035,2.035,0,0,1,1.494-.616h.7a5.4,5.4,0,0,0,3.955-1.67,5.405,5.405,0,0,0,1.67-3.955v-5.625h-7.032a4.063,4.063,0,0,1-2.988-1.23,4.063,4.063,0,0,1-1.23-2.988v-11.25a4.07,4.07,0,0,1,1.23-2.989,4.068,4.068,0,0,1,2.988-1.23h11.25A4.074,4.074,0,0,1-499.7,4673.279Z"
+                                                    transform="translate(543.466 -4672.049)" fill="#fff" />
+                                            </svg>
+                                        </div>
+                                        <p class="leading-normal text-lg py-6 text-center whitespace-normal">Any
+                                            Time We Start
+                                            Something
+                                            New
+                                            It Is Exciting And
+                                            We
+                                            Are
+                                            Very
+                                            Motivated
+                                            And
+                                            Committed.
+                                        </p>
+                                        <span class="text-base">
+                                            <span class="line"></span>
+                                            Devil Roy Barman
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <span class="btn1 selected"></span>
+                            <span class="btn2"></span>
+                            <span class="btn3"></span>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <button class="button primary-button-long-dark animation-underline">View All</button>
-                    </div>
+                </div>
+                <div class="md:w-1/2 ar-3 md:absolute right-0 top-0">
+                    <img class="w-full h-full" width="977px" height="602px" src="../imgs/customers.png"
+                        alt="Picture of the customers">
                 </div>
             </div>
-        </div>
-        <!-- Chefs Part -->
-        <div class="chefs bg-primary bg-border-wrapper">
-            <div class="container relative">
-                <div class="container-inner flex flex-col align-middle ">
-                    <div class="text-center">
+            <!-- Recipes Part -->
+            <div id="recipes" class="recipe bg-border-wrapper bg-gray-light">
+                <div class="container relative">
+                    <div class="container-inner flex flex-col align-middle ">
                         <h4 class="uppercase text-center">
-                            Discover Chefs From Restaurant
+                            Discover Recipes From Restaurant
                             <br>
                             <strong class="text-4xl">
-                                Our chefs
+                                RECENT RECIPES
                             </strong>
                         </h4>
+                        <div class="my-6 mx-4 md:mx-40">
+                            <div class="flex flex-wrap">
+                                <ul class="w-1/2 md:w-1/4">
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" width="285px" height="285px"
+                                                src="../imgs/recipes/recipe-1.jpg" alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-2.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-1" src="../imgs/recipes/recipe-3.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-4.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="w-1/2 md:w-1/4">
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-5.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-1" src="../imgs/recipes/recipe-6.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-7.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-9.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="w-1/2 md:w-1/4">
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-1" src="../imgs/recipes/recipe-8.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-10.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-15.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-11.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="w-1/2 md:w-1/4">
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-6.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-13.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-1" src="../imgs/recipes/recipe-14.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                    <li class="p-1.25">
+                                        <a href="#">
+                                            <img class="w-full ar-square" src="../imgs/recipes/recipe-15.jpg"
+                                                alt="recipe picture">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="text-center">
+                            <button class="button primary-button-long-dark animation-underline">View All</button>
+                        </div> -->
                     </div>
-                    <!-- Card groud -->
-                    <div class="card-container-wrapper chef">
-                        <div class="card-container">
-                            <div class="chef-card-wrapper">
-                                <!-- Chef image -->
-                                <div class="chef-img">
-                                    <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-2.png"
-                                        alt="Our chef" srcset="">
-                                </div>
-                                <!-- Chef detail -->
-                                <div class="chef-detail">
-                                    <div>
-                                        <div class="chef-text-wrapper">
-                                            <p class="chef-title">Devil Roy Barman</p>
-                                            <span>Founder & Head of Chef</span>
-                                        </div>
-                                        <div class="social-account-wrapper">
-                                            <div class="social-account">
-                                                <a class="icon-rounded" href=""><span
-                                                        class="iconfont icon-facebook"></span></a>
-                                                <a class="icon-rounded" href=""><span
-                                                        class=" iconfont icon-twitter "></span></a>
-                                                <a class="icon-rounded" href=""><span
-                                                        class="iconfont icon-ins "></span></a>
+                </div>
+            </div>
+            <!-- Chefs Part -->
+            <div id="chefs" class="chefs bg-primary bg-border-wrapper">
+                <div class="container relative">
+                    <div class="container-inner flex flex-col align-middle ">
+                        <div class="text-center">
+                            <h4 class="uppercase text-center">
+                                Discover Chefs From Restaurant
+                                <br>
+                                <strong class="text-4xl">
+                                    Our chefs
+                                </strong>
+                            </h4>
+                        </div>
+                        <!-- Card groud -->
+                        <div class="card-container-wrapper chef">
+                            <div class="card-container">
+                                <div class="chef-card-wrapper">
+                                    <!-- Chef image -->
+                                    <div class="chef-img">
+                                        <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-2.png"
+                                            alt="Our chef" srcset="">
+                                    </div>
+                                    <!-- Chef detail -->
+                                    <div class="chef-detail">
+                                        <div>
+                                            <div class="chef-text-wrapper">
+                                                <p class="chef-title">Devil Roy Barman</p>
+                                                <span>Founder & Head of Chef</span>
+                                            </div>
+                                            <div class="social-account-wrapper">
+                                                <div class="social-account">
+                                                    <a class="icon-rounded" href=""><span
+                                                            class="iconfont icon-facebook"></span></a>
+                                                    <a class="icon-rounded" href=""><span
+                                                            class=" iconfont icon-twitter "></span></a>
+                                                    <a class="icon-rounded" href=""><span
+                                                            class="iconfont icon-ins "></span></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-container">
-                            <div class="chef-card-wrapper">
-                                <!-- Chef image -->
-                                <div class="chef-img">
-                                    <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-1.png"
-                                        alt="Our chef" srcset="">
-                                </div>
-                                <!-- Chef detail -->
-                                <div class="chef-detail">
-                                    <div>
-                                        <div class="chef-text-wrapper">
-                                            <p class="chef-title">RENE REDZEPI</p>
-                                            <span>Business Developer</span>
-                                        </div>
-                                        <div class="social-account-wrapper">
-                                            <div class="social-account">
-                                                <a class="icon-rounded" href=""><span
-                                                        class="iconfont icon-facebook"></span></a>
-                                                <a class="icon-rounded" href=""><span
-                                                        class=" iconfont icon-twitter "></span></a>
-                                                <a class=" icon-rounded" href=""><span
-                                                        class="iconfont icon-ins "></span></a>
+                            <div class="card-container">
+                                <div class="chef-card-wrapper">
+                                    <!-- Chef image -->
+                                    <div class="chef-img">
+                                        <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-1.png"
+                                            alt="Our chef" srcset="">
+                                    </div>
+                                    <!-- Chef detail -->
+                                    <div class="chef-detail">
+                                        <div>
+                                            <div class="chef-text-wrapper">
+                                                <p class="chef-title">RENE REDZEPI</p>
+                                                <span>Business Developer</span>
+                                            </div>
+                                            <div class="social-account-wrapper">
+                                                <div class="social-account">
+                                                    <a class="icon-rounded" href=""><span
+                                                            class="iconfont icon-facebook"></span></a>
+                                                    <a class="icon-rounded" href=""><span
+                                                            class=" iconfont icon-twitter "></span></a>
+                                                    <a class=" icon-rounded" href=""><span
+                                                            class="iconfont icon-ins "></span></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-container">
-                            <div class="chef-card-wrapper">
-                                <!-- Chef image -->
-                                <div class="chef-img">
-                                    <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-3.png"
-                                        alt="Our chef" srcset="">
-                                </div>
-                                <!-- Chef detail -->
-                                <div class="chef-detail">
-                                    <div>
-                                        <div class="chef-text-wrapper">
-                                            <p class="chef-title">DAVID CHANG</p>
-                                            <span>Master Chef</span>
-                                        </div>
-                                        <div class="social-account-wrapper">
-                                            <div class="social-account">
-                                                <a class="icon-rounded " href=""><span
-                                                        class="iconfont icon-facebook"></span></a>
-                                                <a class="icon-rounded " href=""><span
-                                                        class=" iconfont icon-twitter "></span></a>
-                                                <a class=" icon-rounded " href=""><span
-                                                        class="iconfont icon-ins "></span></a>
+                            <div class="card-container">
+                                <div class="chef-card-wrapper">
+                                    <!-- Chef image -->
+                                    <div class="chef-img">
+                                        <img class="w-full" width="450px" height="644px" src="../imgs/chefs/chef-3.png"
+                                            alt="Our chef" srcset="">
+                                    </div>
+                                    <!-- Chef detail -->
+                                    <div class="chef-detail">
+                                        <div>
+                                            <div class="chef-text-wrapper">
+                                                <p class="chef-title">DAVID CHANG</p>
+                                                <span>Master Chef</span>
+                                            </div>
+                                            <div class="social-account-wrapper">
+                                                <div class="social-account">
+                                                    <a class="icon-rounded " href=""><span
+                                                            class="iconfont icon-facebook"></span></a>
+                                                    <a class="icon-rounded " href=""><span
+                                                            class=" iconfont icon-twitter "></span></a>
+                                                    <a class=" icon-rounded " href=""><span
+                                                            class="iconfont icon-ins "></span></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Contact Part -->
-        <div class="contact bg-border-wrapper bg-gray-light">
-            <div class="container">
-                <div class="container-inner flex flex-col align-middle">
-                    <div class="text-center">
-                        <h4 class="uppercase text-center">
-                            Submit Information to Place Order
-                            <br>
-                            <strong class="text-4xl">
-                                Reserve a table
-                            </strong>
-                        </h4>
+            <!-- Contact Part -->
+            <div id="reservation" class="contact bg-border-wrapper bg-gray-light">
+                <div class="container">
+                    <div class="container-inner flex flex-col align-middle">
+                        <div class="text-center">
+                            <h4 class="uppercase text-center">
+                                Submit Information to Place Order
+                                <br>
+                                <strong class="text-4xl">
+                                    Reserve a table
+                                </strong>
+                            </h4>
 
-                    </div>
-                    <div class="relative mt-6 special-wrapper">
-                        <div class="half-part-img">
-                            <img class="w-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
-                                alt="Our menu-1 picture">
                         </div>
-                        <div class="half-part-text right">
-                            <div class="bg-primary special-text-wrapper">
-                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                        <div class="relative mt-6 special-wrapper">
+                            <div class="half-part-img">
+                                <img class="w-full" width="564.8" height="576" src="../imgs/menu-1.jpg"
+                                    alt="Our menu-1 picture">
+                            </div>
+                            <div class="half-part-text right">
+                                <div class="bg-primary special-text-wrapper">
+                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                                        action="https://formspree.io/f/xgerpapa" method="post">
+                                        <fieldset id="fs-frm-inputs">
+                                            <div class="mt-2 flex justify-between mb-1">
+                                                <div class="w-1/2 mr-4">
+                                                    <label class="leading-loose" for="full-name">Your Name</label><br>
+                                                    <input class="input input-full" type="text" name="name"
+                                                        id="full-name" placeholder="" required="">
+                                                </div>
+                                                <div class="w-1/2">
+                                                    <label class="leading-loose" for="email-address">Your Email
+                                                    </label><br>
+                                                    <input class="input input-full" type="email" name="_replyto"
+                                                        id="email-address" placeholder="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2 flex justify-between mb-1">
+                                                <div class="w-1/2 mr-4">
+                                                    <label class="leading-loose" for="full-name">Phone
+                                                        Number</label><br>
+                                                    <input class="input input-full" type="telephone" name="telephone"
+                                                        id="telephone" placeholder="" required="">
+                                                </div>
+                                                <div class="w-1/2">
+                                                    <label class="leading-loose" for="email-address">Table
+                                                        For</label><br>
+                                                    <input class="input input-full" type="number" id="table"
+                                                        name="table" min="1" max="20" placeholder="1 Person"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2 flex justify-between mb-1">
+                                                <div class="w-1/2 mr-4">
+                                                    <label class="leading-loose" for="full-name">Select Time</label><br>
+                                                    <input class="input input-full" type="time" name="time" id="time"
+                                                        value="13:30" placeholder="" required="">
+                                                </div>
+                                                <div class="w-1/2">
+                                                    <label class="leading-loose" for="email-address">Select
+                                                        Date</label><br>
+                                                    <input class="input input-full" type="date" id="date" name="date"
+                                                        required="" value="2021-08-16">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2 mb-1">
+                                                <label class="leading-loose" for="message ">Message</label><br>
+                                                <textarea class="input input-full" rows="5" name="message" id="message"
+                                                    placeholder=""></textarea>
+                                            </div>
+                                            <input type="hidden" name="_subject" id="email-subject"
+                                                value="Contact Form Submission">
+                                        </fieldset>
+                                        <label for="reserveNow"
+                                            class="button primary-button-long-dark animation-underline mt-4">Reserve
+                                            Now</label>
+                                        <input type="submit" name="reserveNow" id="reserveNow" value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark text-gray-300 mt-40 text-sm">
+            <div class="container ">
+                <div class="relative py-1">
+                    <!-- Newsletter -->
+                    <div class="bg-border-wrapper-top bg-dark newsletter -mt-24">
+                        <div class="pt-20 pb-10 px-9 lg:flex lg:justify-between">
+                            <div class="lg:w-1/2">
+                                <h3 class="uppercase font-bold">Join Our Newsletter</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla metus.</p>
+                            </div>
+                            <div class="lg:w-1/2 lg:px-4 text-black py-3">
+                                <form class="" name="simple-contact-form" accept-charset="utf-8"
                                     action="https://formspree.io/f/xgerpapa" method="post">
-                                    <fieldset id="fs-frm-inputs">
-                                        <div class="mt-2 flex justify-between mb-1">
-                                            <div class="w-1/2 mr-4">
-                                                <label class="leading-loose" for="full-name">Your Name</label><br>
-                                                <input class="input input-full" type="text" name="name" id="full-name"
-                                                    placeholder="" required="">
-                                            </div>
-                                            <div class="w-1/2">
-                                                <label class="leading-loose" for="email-address">Your Email </label><br>
-                                                <input class="input input-full" type="email" name="_replyto"
-                                                    id="email-address" placeholder="" required="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 flex justify-between mb-1">
-                                            <div class="w-1/2 mr-4">
-                                                <label class="leading-loose" for="full-name">Phone Number</label><br>
-                                                <input class="input input-full" type="telephone" name="telephone"
-                                                    id="telephone" placeholder="" required="">
-                                            </div>
-                                            <div class="w-1/2">
-                                                <label class="leading-loose" for="email-address">Table For</label><br>
-                                                <input class="input input-full" type="number" id="table" name="table"
-                                                    min="1" max="20" placeholder="1 Person" required="">
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 flex justify-between mb-1">
-                                            <div class="w-1/2 mr-4">
-                                                <label class="leading-loose" for="full-name">Select Time</label><br>
-                                                <input class="input input-full" type="time" name="time" id="time"
-                                                    value="13:30" placeholder="" required="">
-                                            </div>
-                                            <div class="w-1/2">
-                                                <label class="leading-loose" for="email-address">Select Date</label><br>
-                                                <input class="input input-full" type="date" id="date" name="date"
-                                                    required="" value="2021-08-16">
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 mb-1">
-                                            <label class="leading-loose" for="message ">Message</label><br>
-                                            <textarea class="input input-full" rows="5" name="message" id="message"
-                                                placeholder=""></textarea>
-                                        </div>
-                                        <input type="hidden" name="_subject" id="email-subject"
-                                            value="Contact Form Submission">
-                                    </fieldset>
+                                    <input class="input mr-4 mb-3" type="email" name="s-email" id="s-email"
+                                        placeholder="Your Email Address" required>
                                     <label for="submit"
-                                        class="button primary-button-long-dark animation-underline mt-4">Reserve
-                                        Now</label>
-                                    <input type="submit" name="submit" value="">
+                                        class="button py-2 px-4 bg-gray-light animation-underline">Subscribe</label>
+                                    <input class="hidden" type="submit" value="submit" id="submit" name="submit">
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="bg-dark text-gray-300 mt-40 text-sm">
-        <div class="container ">
-            <div class="relative py-1">
-                <!-- Newsletter -->
-                <div class="bg-border-wrapper-top bg-dark newsletter -mt-24">
-                    <div class="pt-20 pb-10 px-9 lg:flex lg:justify-between">
-                        <div class="lg:w-1/2">
-                            <h3 class="uppercase font-bold">Join Our Newsletter</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla metus.</p>
+                    <div class="pb-20 flex flex-wrap justify-center align-middle">
+                        <div class="md:w-1/3 lg:w-1/4 px-2 my-2">
+                            <div class="text-white">
+                                <h5 class="font-bold leading-11">Dev Restaurant</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed .
+                            </p>
+                            <div class="social-account">
+                                <div class="flex justify-start pt-3">
+                                    <a class="icon-rounded bg-facebook bg-opacity-75  hover:bg-opacity-100"
+                                        href=""><span class="iconfont icon-facebook"></span></a>
+                                    <a class="icon-rounded bg-twitter bg-opacity-75  hover:bg-opacity-100" href=""><span
+                                            class="iconfont icon-twitter  "></span></a>
+                                    <a class="icon-rounded bg-instagram bg-opacity-75 hover:bg-opacity-100"
+                                        href=""><span class="iconfont icon-ins "></span></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="lg:w-1/2 lg:px-4 text-black py-3">
-                            <form class="" name="simple-contact-form" accept-charset="utf-8"
-                                action="https://formspree.io/f/xgerpapa" method="post">
-                                <input class="input mr-4 mb-3" type="email" name="s-email" id="s-email"
-                                    placeholder="Your Email Address" required>
-                                <label for="submit"
-                                    class="button py-2 px-4 bg-gray-light animation-underline">Subscribe</label>
-                                <input class="hidden" type="submit" value="submit" id="submit" name="submit">
-                            </form>
+                        <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2">
+                            <div class="text-white">
+                                <h6 class="leading-11">Open Hours</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="flex justify-around items-center">
+                                        <p class="flex-grow-0 icon-text-align">
+                                            <!-- <span class="iconfont icon-clock"></span>  -->
+                                            <span class="iconfont icon-clock"></span>
+                                            Mondays
+                                        </p>
+                                        <span class="line flex-grow mx-3"></span>
+                                        <span class="flex-grow-0">Closed</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex justify-around items-center">
+                                        <p class="flex-grow-0 icon-text-align">
+                                            <span class="iconfont icon-clock"></span>
+                                            Tue - Fri
+                                        </p>
+                                        <span class="line flex-grow mx-3"></span>
+                                        <span class="flex-grow-0">10am - 12am</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex justify-around items-center">
+                                        <p class="flex-grow-0 icon-text-align">
+                                            <span class="iconfont icon-clock"></span>
+                                            Sat - Sun
+                                        </p>
+                                        <span class="line flex-grow mx-3"></span>
+                                        <span class="flex-grow-0">7am - 1pm</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex justify-around items-center">
+                                        <p class="flex-grow-0 icon-text-align">
+                                            <span class="iconfont icon-clock"></span>
+                                            Public Holidays
+                                        </p>
+                                        <span class="line flex-grow mx-3"></span>
+                                        <span class="flex-grow-0">7am - 1pm</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="pb-20 flex flex-wrap justify-center align-middle">
-                    <div class="md:w-1/3 lg:w-1/4 px-2 my-2">
-                        <div class="text-white">
-                            <h5 class="font-bold leading-11">Dev Restaurant</h5>
+                        <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2 ">
+                            <div class="text-white">
+                                <h6 class="leading-11">Contact Us</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="tel:+1-303-499-7111" class="icon-text-align">
+                                        <span class="iconfont icon-phone"></span>
+                                        +1-303-499-7111
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/maps" target="_blank" class="flex icon-text-align">
+                                        <span class="iconfont icon-location"></span>
+                                        <p>121/32 Second Street, New York</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p class=" icon-text-align">
+                                        <span class="iconfont icon-mail"></span>devdesign.studio@gmail.com
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna aliquyam erat, sed .
-                        </p>
-                        <div class="social-account">
-                            <div class="flex justify-start pt-3">
-                                <a class="icon-rounded bg-facebook bg-opacity-75  hover:bg-opacity-100" href=""><span
-                                        class="iconfont icon-facebook"></span></a>
-                                <a class="icon-rounded bg-twitter bg-opacity-75  hover:bg-opacity-100" href=""><span
-                                        class="iconfont icon-twitter  "></span></a>
-                                <a class="icon-rounded bg-instagram bg-opacity-75 hover:bg-opacity-100" href=""><span
-                                        class="iconfont icon-ins "></span></a>
+                        <div class="md:w-1/3 lg:w-1/4 px-2 my-2 mr-auto">
+                            <div class="text-white">
+                                <h6 class="leading-11">Instagram</h6>
+                            </div>
+                            <div class="flex flex-wrap -mx-1.25">
+                                <a class="w-1/3 p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/1.jpg"
+                                        alt="instagram photo">
+                                </a>
+                                <a class="w-1/3  p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/2.jpg"
+                                        alt="instagram photo">
+                                </a>
+                                <a class="w-1/3  p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/3.jpg"
+                                        alt="instagram photo">
+                                </a>
+                                <a class="w-1/3  p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/4.jpg"
+                                        alt="instagram photo">
+                                </a>
+                                <a class="w-1/3  p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/5.jpg"
+                                        alt="instagram photo">
+                                </a>
+                                <a class="w-1/3  p-1.25" href="">
+                                    <img class="w-full" width="103px" height="103px" src="../imgs/instagram/6.jpg"
+                                        alt="instagram photo">
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2">
-                        <div class="text-white">
-                            <h6 class="leading-11">Open Hours</h6>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="flex justify-around items-center">
-                                    <p class="flex-grow-0 icon-text-align">
-                                        <!-- <span class="iconfont icon-clock"></span>  -->
-                                        <span class="iconfont icon-clock"></span>
-                                        Mondays
-                                    </p>
-                                    <span class="line flex-grow mx-3"></span>
-                                    <span class="flex-grow-0">Closed</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-around items-center">
-                                    <p class="flex-grow-0 icon-text-align">
-                                        <span class="iconfont icon-clock"></span>
-                                        Tue - Fri
-                                    </p>
-                                    <span class="line flex-grow mx-3"></span>
-                                    <span class="flex-grow-0">10am - 12am</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-around items-center">
-                                    <p class="flex-grow-0 icon-text-align">
-                                        <span class="iconfont icon-clock"></span>
-                                        Sat - Sun
-                                    </p>
-                                    <span class="line flex-grow mx-3"></span>
-                                    <span class="flex-grow-0">7am - 1pm</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex justify-around items-center">
-                                    <p class="flex-grow-0 icon-text-align">
-                                        <span class="iconfont icon-clock"></span>
-                                        Public Holidays
-                                    </p>
-                                    <span class="line flex-grow mx-3"></span>
-                                    <span class="flex-grow-0">7am - 1pm</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <hr class="border-current">
+                    <div class="py-3 text-center">
+                        © 2019 All Rights Reserved. Designed By Devdesgin Studio
                     </div>
-                    <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2 ">
-                        <div class="text-white">
-                            <h6 class="leading-11">Contact Us</h6>
-                        </div>
-                        <ul>
-                            <li>
-                                <p class="icon-text-align">
-                                    <span class="iconfont icon-phone"></span>
-                                    +xxxx-xxxx
-                                </p>
-                            </li>
-                            <li>
-                                <div class="flex icon-text-align">
-                                    <span class="iconfont icon-location"></span>
-                                    <p>121/32 Second Street, New York</p>
-                                </div>
-                            </li>
-                            <li>
-                                <p class=" icon-text-align">
-                                    <span class="iconfont icon-mail"></span>devdesign.studio@gmail.com
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/3 lg:w-1/4 px-2 my-2 mr-auto">
-                        <div class="text-white">
-                            <h6 class="leading-11">Instagram</h6>
-                        </div>
-                        <div class="flex flex-wrap -mx-1.25">
-                            <a class="w-1/3 p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/1.jpg"
-                                    alt="instagram photo">
-                            </a>
-                            <a class="w-1/3  p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/2.jpg"
-                                    alt="instagram photo">
-                            </a>
-                            <a class="w-1/3  p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/3.jpg"
-                                    alt="instagram photo">
-                            </a>
-                            <a class="w-1/3  p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/4.jpg"
-                                    alt="instagram photo">
-                            </a>
-                            <a class="w-1/3  p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/5.jpg"
-                                    alt="instagram photo">
-                            </a>
-                            <a class="w-1/3  p-1.25" href="">
-                                <img class="w-full" width="103px" height="103px" src="../imgs/instagram/6.jpg"
-                                    alt="instagram photo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <hr class="border-current">
-                <div class="py-3 text-center">
-                    © 2019 All Rights Reserved. Designed By Devdesgin Studio
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="../js/carousel.js"></script>
     <script src="../js/main.js"></script>
 

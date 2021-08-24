@@ -226,6 +226,27 @@ header .part-1 {
 header.active .part-1 {
   @apply max-h-0 opacity-0 hidden;
 }
+/* Navbar Animation */
+.navbar,
+.body {
+  @apply transition-all duration-200;
+}
+.navbar {
+  transform: translateX(300px);
+}
+.navbar-open {
+  @apply overflow-y-hidden;
+}
+.navbar-open .navbar {
+  @apply transform translate-x-0;
+}
+.navbar-open .body {
+  transform: translateX(-300px);
+}
+.navbar-open .body::after {
+  content: "";
+  @apply absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-70;
+}
 /*==========================================*/
 /* Hero Part */
 /*==========================================*/
@@ -274,7 +295,7 @@ header.active .part-1 {
   @apply text-center;
 }
 .menu-item .text-wrapper h6 {
-  @apply mb-3 uppercase whitespace-nowrap leading-none;
+  @apply my-3 uppercase whitespace-nowrap leading-none;
 }
 
 .menu-item .text-wrapper {
@@ -368,10 +389,10 @@ header.active .part-1 {
   @apply my-3 text-center;
 }
 .chef-text-wrapper span {
-  @apply text-xs md:text-xl;
+  @apply text-xs md:text-lg;
 }
 .chef-title {
-  @apply text-base md:text-2xl font-bold my-0 md:my-3;
+  @apply text-base md:text-xl font-bold my-0 md:my-3;
 }
 
 .chef-detail,
@@ -384,7 +405,7 @@ header.active .part-1 {
 }
 
 .social-account {
-  @apply flex justify-between py-3;
+  @apply flex justify-between py-2;
 }
 .social-account .icon-rounded {
   @apply hover:bg-white hover:text-black;
