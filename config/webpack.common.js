@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
-    publicPath: '/',
+    publicPath: '',
   },
 
   // Customize the webpack build process
@@ -66,7 +66,7 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/background/[name]',
+          filename: 'assets/background/[name][ext]',
         },
       },
 

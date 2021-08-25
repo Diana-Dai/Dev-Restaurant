@@ -10,7 +10,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '',
     filename: 'js/[name].[contenthash].bundle.js',
   },
   module: {
@@ -18,17 +18,15 @@ module.exports = merge(common, {
       {
         test: /\.(scss|css)$/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              importLoaders: 2,
-              sourceMap: false,
-              modules: true,
+              // 当前的css所在的文件相对于打包后的根路径dist的相对路径
+              publicPath: '../',
             },
           },
+          'css-loader',
           'postcss-loader',
-          'sass-loader',
         ],
       },
     ],
