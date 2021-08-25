@@ -71,7 +71,13 @@ module.exports = {
       },
 
       // Fonts and SVGs: Inline files
-      // { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/resource' },
+      // {
+      //   test: /\.(woff(2)?|eot|ttf|otf)$/,
+      //   type: 'asset/resource',
+      //   generator: {
+      //     filename: 'assets/font/[name]',
+      //   },
+      // },
     ],
   },
 
