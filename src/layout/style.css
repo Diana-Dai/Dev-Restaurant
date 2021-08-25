@@ -14,7 +14,9 @@
       font-size: 15px;
     }
   }
-
+  html {
+    font-display: optional;
+  }
   h1 {
     @apply text-6xl;
   }
