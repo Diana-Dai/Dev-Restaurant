@@ -75,7 +75,7 @@ const menuTabsControler = {
         currentTab = e.target.parentNode.id;
       }
     }
-
+    console.log(e.target);
     // Change the status of the menu this.tabs
     clearAllActiveStatus(document.getElementById("menu-tabs"));
     document.getElementById(currentTab).classList.add("active");

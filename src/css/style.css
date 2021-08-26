@@ -35,7 +35,9 @@
   h6 {
     @apply text-xl;
   }
-
+  img {
+    @apply w-full;
+  }
   a:hover {
     @apply cursor-pointer;
   }
@@ -51,18 +53,7 @@
   .bg-secondary {
     @apply bg-gray-light text-gray;
   }
-  .ar-2 {
-    aspect-ratio: 0.758;
-  }
-  .ar-square {
-    aspect-ratio: 1;
-  }
-  .ar-3 {
-    aspect-ratio: 1.58;
-  }
-  .ar-1 {
-    aspect-ratio: 0.505;
-  }
+
   svg path {
     @apply stroke-current;
   }
@@ -272,13 +263,14 @@ header.active .part-1 {
 .menu-tabs {
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
 }
-.menu-tabs .nav-link.active {
+.nav-link.active {
   @apply text-white bg-black;
 }
 
 .menu-tabs .nav-link {
-  @apply cursor-pointer transition-colors duration-500 ar-square flex-1 text-center flex flex-col justify-center items-center;
+  @apply cursor-pointer transition-colors duration-500  w-20 h-20 md:w-40 md:h-40 text-center flex flex-col justify-center items-center;
 }
+
 .tab-pane {
   @apply hidden py-5 opacity-0 transition-opacity;
 }
@@ -365,7 +357,7 @@ header.active .part-1 {
   @apply inline-block  bg-dark w-full h-full relative;
 }
 .carousel-container .pagination {
-  @apply absolute bottom-0 sm:bottom-4 left-1/2 transform -translate-x-1/2;
+  @apply absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2;
 }
 .carousel-container .pagination span {
   @apply inline-block mx-1.25 w-2 h-2 border border-solid border-current rounded-full transition-all duration-700;
@@ -381,14 +373,19 @@ header.active .part-1 {
 /* Chef Card component */
 
 .chef-card-wrapper {
-  @apply bg-secondary mt-16 md:mt-40 ar-2 relative;
+  @apply relative py-2;
+}
+.chef-card-wrapper::before {
+  content: "";
+  @apply absolute bottom-2 top-16 left-0 right-0 bg-secondary;
 }
 .chef-img {
-  @apply absolute w-full bottom-10 md:bottom-24;
+  @apply relative mb-10;
 }
 .chef-detail {
   @apply transition-colors duration-500 bg-secondary cursor-pointer absolute bottom-0 left-0 right-0 flex items-center justify-center;
 }
+
 .chef-text-wrapper {
   @apply my-3 text-center;
 }
@@ -400,7 +397,7 @@ header.active .part-1 {
 }
 
 .chef-detail,
-.chef-card-wrapper {
+.chef-card-wrapper::before {
   @apply rounded-b-xl md:rounded-b-3;
 }
 
