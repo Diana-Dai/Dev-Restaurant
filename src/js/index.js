@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import "../css/style.css";
-
+import "../assets/font/iconfont.css";
 import { carouselControler, autoSlide } from "./carousel";
 
 function checkViewPoint(el, scrollTop) {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Here is a precise description of my awesome webpage." />
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2759806_tgx78p3yby.css" />
+  <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/font_2759806_tgx78p3yby.css" /> -->
   <title>Document</title>
   <!-- <link rel="stylesheet" href="css/compiled.css" /> -->
 </head>
@@ -14,21 +14,14 @@
 <body class="font-sans text-dark w-full h-screen">
   <div id="navbar" class="navbar fixed top-0 bottom-0 right-0 bg-dark font-bold">
     <div class="mt-24 pl-12" style="width: 300px">
-      <span id="navbar-close" class="
-            iconfont
-            icon-close
-            text-2xl
-            cursor-pointer
-            absolute
-            right-10
-            top-10
-            opacity-20
-            hover:opacity-100
-            transition-opacity
-          "></span>
+      <button id="navbar-close"
+        class=" cursor-pointer absolute right-10 top-10 opacity-20 hover:opacity-100  transition-opacity text-white"
+        type="button" aria-describedby="CloseTheNavigation" aria-controls="navbar" aria-label="Toggle navigation">
+        <span class="iconfont icon-close text-2xl"></span>
+      </button>
       <ul>
         <li class="py-3">
-          <a class="animation-underline" href="#navbar">Home</a>
+          <a class="animation-underline" aria-current="page" href="#navbar">Home</a>
         </li>
         <li class="py-3">
           <a class="animation-underline" href="#aboutUs">About Us</a>
@@ -52,7 +45,7 @@
     <header class="text-white fixed top-0 w-full">
       <div class="part-1 text-sm bg-primary h-8">
         <div class="h-full flex items-center justify-center">
-          <a href="https://www.google.com/maps" target="_blank" class="flex icon-text-align mr-4">
+          <a href="https://www.google.com/maps" rel="noreferrer" target="_blank" class="flex icon-text-align mr-4">
             <span class="iconfont icon-location"></span>
             <p>121/32 Second Street, New York</p>
           </a>
@@ -64,13 +57,13 @@
       </div>
       <div class="part-2 py-4">
         <div class="container flex justify-between items-center">
-          <h5 class="uppercase whitespace-nowrap">
+          <span class="text-2xl uppercase whitespace-nowrap">
             <a href="#navbar">Dev Restaurant</a>
-          </h5>
+          </span>
           <nav class="hidden lg:block text-sm">
             <ul id="nav-list" class="flex justify-between items-center font-bold">
               <li class="ml-10">
-                <a class="animation-underline" id="tab-hero" href="#hero">Home</a>
+                <a class="animation-underline" aria-current="page" id="tab-hero" href="#hero">Home</a>
               </li>
               <li class="ml-10">
                 <a class="animation-underline" id="tab-aboutUs" href="#aboutUs">About Us</a>
@@ -100,8 +93,9 @@
                     hidden
                     animation-underline
                   ">Reservations</a>
-              <span id="navbar-toggler" class="iconfont icon-menu text-3xl cursor-pointer">
-              </span>
+              <button id="navbar-toggler" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="iconfont icon-menu text-3xl cursor-pointer"></span>
+              </button>
             </div>
           </nav>
           <!--E- Menu of Mobile Version -->
@@ -111,7 +105,8 @@
     <main>
       <!-- Hero Section  -->
       <div id="hero" class="w-0 h-0 overflow-hidden">
-        <img width="0" loading="eager" src="assets/imgs/background/background-1.jpg" />
+        <img width="0" loading="eager" aria-hidden="true" src="assets/imgs/background/background-1.jpg"
+          alt="burger image for the background" />
       </div>
       <div class="text-white hero h-screen bg-cover bg-no-repeat bg-center">
         <div class="container h-full relative">
@@ -151,9 +146,9 @@
               <div class="about-card-wrapper">
                 <div class="px-5 py-6 flex flex-col items-center">
                   <span class="iconfont icon-like text-4xl"></span>
-                  <h6 class="uppercase font-bold leading-loose">
+                  <span class="text-xl uppercase font-bold leading-loose">
                     Quality foods
-                  </h6>
+                  </span>
                   <p class="text-center">
                     Sit amet, consectetur adipiscing elit quisque eget maximus
                     velit, non eleifend libero curabitur dapibus mauris sed
@@ -167,14 +162,9 @@
               <div class="about-card-wrapper">
                 <div class="px-5 py-6 flex flex-col items-center">
                   <span class="iconfont icon-delivery text-4xl"></span>
-                  <h6 class="
-                        uppercase
-                        font-bold
-                        whitespace-nowrap
-                        leading-loose
-                      ">
+                  <span class="text-xl uppercase font-bold whitespace-nowrap leading-loose">
                     fastest delivery
-                  </h6>
+                  </span>
                   <p class="text-center">
                     Sit amet, consectetur adipiscing elit quisque eget maximus
                     velit, noneleifend libero curabitur dapibus mauris sed leo
@@ -189,9 +179,9 @@
                 <div class="px-5 py-6 flex flex-col items-center">
                   <span class="iconfont icon-pizza text-4xl text-3xl"></span>
 
-                  <h6 class="uppercase font-bold leading-loose">
+                  <span class="text-xl uppercase font-bold leading-loose">
                     original recipes
-                  </h6>
+                  </span>
                   <p class="text-center">
                     Sit amet, consectetur adipiscing elit quisque eget maximus
                     velit, non eleifend libero curabitur dapibus mauris sed
@@ -216,10 +206,10 @@
                       lg:text-left
                       special-text-wrapper
                     ">
-                  <h3 class="lg:leading-snug leading-none">
+                  <span class="text-4xl lg:leading-snug leading-none">
                     Discover
-                    <strong class="block uppercase text-4xl">Our Story</strong>
-                  </h3>
+                    <strong class="block uppercase">Our Story</strong>
+                  </span>
                   <br />
                   <p>
                     One of the notable character traits of a successful small
@@ -249,14 +239,15 @@
       <div id="menu" class="dishes">
         <div class="container relative">
           <div class="container-inner flex flex-col align-middle">
-            <h4 class="uppercase text-center">
+            <span class="uppercase text-center text-3xl">
               Let's discover food
               <br />
               <strong class="text-4xl"> special dishes today </strong>
-            </h4>
+            </span>
             <!--  Menu Tabs Part -->
             <div class="flex justify-center">
               <ul id="menu-tabs" class="
+
   menu-tabs
   text-xs
   md:text-base
@@ -296,12 +287,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-burger.jpg"
                         alt="Chesse Burger Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$39</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Chesse Burger</h6>
+                      <span class="text-xl">Chesse Burger</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -312,12 +303,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-pizza.jpg" alt="Pizza"
                         srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$30</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Pizza</h6>
+                      <span class="text-xl">Pizza</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -328,12 +319,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-sandwich.jpg"
                         alt="sandwich Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$20</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Sandwich</h6>
+                      <span class="text-xl">Sandwich</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -345,12 +336,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-salad.jpg"
                         alt="Salad Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$20</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Salad</h6>
+                      <span class="text-xl">Salad</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -361,12 +352,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-cheeseburger.jpg"
                         alt="Meat balls Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$68</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Meat Balls</h6>
+                      <span class="text-xl">Meat Balls</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -382,12 +373,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-salad.jpg"
                         alt="Salad Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$20</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Salad</h6>
+                      <span class="text-xl">Salad</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -398,12 +389,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-cheeseburger.jpg"
                         alt="Meat balls Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$68</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Meat Balls</h6>
+                      <span class="text-xl">Meat Balls</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -414,12 +405,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-salad.jpg"
                         alt="Salad Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$20</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Salad</h6>
+                      <span class="text-xl">Salad</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -430,12 +421,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-cheeseburger.jpg"
                         alt="Meat balls Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$68</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Meat Balls</h6>
+                      <span class="text-xl">Meat Balls</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -451,13 +442,13 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-icecream.jpg"
                         alt="Icecream Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$35</span>
                       </div>
                     </div>
 
                     <div class="text-wrapper">
-                      <h6>Icecream</h6>
+                      <span class="text-xl">Icecream</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -468,12 +459,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-hot-dog.jpg"
                         alt="Hot Dog Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$35</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Hot Dog</h6>
+                      <span class="text-xl">Hot Dog</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -489,12 +480,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/menu-banana&Blueberry.jpg"
                         alt="Banana & Blueberry French Toast Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$50</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Banana French Toast</h6>
+                      <span class="text-xl">Banana French Toast</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -510,12 +501,12 @@
                     <div class="img-wrapper">
                       <img loading="lazy" width="30px" height="30px" src="assets/imgs/dishes/wine.jpg"
                         alt="Red Wine Picture" srcset="" />
-                      <div class="price-wrapper">
+                      <div class="img-wrapper">
                         <span class="">$38</span>
                       </div>
                     </div>
                     <div class="text-wrapper">
-                      <h6>Red Wine Bottle Candle</h6>
+                      <span class="text-xl">Red Wine Bottle Candle</span>
                       <p>
                         Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing
                         Elit Fuidhir Pinnately.
@@ -554,9 +545,9 @@
               </div>
               <div class="half-part-text right">
                 <div class="bg-primary special-text-wrapper">
-                  <h4 class="text-center uppercase font-bold">
+                  <span class="text-3xl text-center uppercase font-bold">
                     LUNCH SET Menu
-                  </h4>
+                  </span>
                   <div class="menu-detail-wrapper">
                     <div class="menu-detail">
                       <div class="menu-dish">
@@ -614,9 +605,9 @@
                 </div>
                 <div class="half-part-text">
                   <div class="bg-primary special-text-wrapper">
-                    <h4 class="text-center uppercase font-bold">
+                    <span class="text-3xl text-center uppercase font-bold">
                       DINNER SET Menu
-                    </h4>
+                    </span>
                     <div class="menu-detail-wrapper">
                       <div class="menu-detail">
                         <div class="menu-dish">
@@ -773,11 +764,11 @@
       <div id="recipes" class="recipe bg-border-wrapper bg-gray-light">
         <div class="container relative">
           <div class="container-inner flex flex-col align-middle">
-            <h4 class="uppercase text-center">
+            <span class="text-3xl uppercase text-center">
               Discover Recipes From Restaurant
               <br />
               <strong class="text-4xl"> RECENT RECIPES </strong>
-            </h4>
+            </span>
             <div class="my-6 mx-4 md:mx-40">
               <div class="flex flex-wrap">
                 <ul class="w-1/2 md:w-1/4">
@@ -873,7 +864,8 @@
                   </li>
                   <li class="p-1.25">
                     <a href="#">
-                      <img loading="lazy" width src="assets/imgs/recipes/recipe-14.jpg" alt="recipe picture" />
+                      <img loading="lazy" width="285px" height="285px" src="assets/imgs/recipes/recipe-14.jpg"
+                        alt="recipe picture" />
                     </a>
                   </li>
                   <li class="p-1.25">
@@ -896,11 +888,11 @@
         <div class="container relative">
           <div class="container-inner flex flex-col align-middle">
             <div class="text-center">
-              <h4 class="uppercase text-center">
+              <span class="text-3xl uppercase text-center">
                 Discover Chefs From Restaurant
                 <br />
                 <strong class="text-4xl"> Our chefs </strong>
-              </h4>
+              </span>
             </div>
             <!-- Card groud -->
             <div class="card-container-wrapper chef">
@@ -920,9 +912,12 @@
                       </div>
                       <div class="social-account-wrapper">
                         <div class="social-account">
-                          <a class="icon-rounded" href=""><span class="iconfont icon-facebook"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-twitter"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-ins"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheFacebook" href="https:myfacebook.com"><span
+                              class="iconfont icon-facebook"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheTwitter" href="https:mytwitter.com"><span
+                              class="iconfont icon-twitter"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheInstagram" href="https:myinstagram.com"><span
+                              class="iconfont icon-ins"></span></a>
                         </div>
                       </div>
                     </div>
@@ -945,9 +940,12 @@
                       </div>
                       <div class="social-account-wrapper">
                         <div class="social-account">
-                          <a class="icon-rounded" href=""><span class="iconfont icon-facebook"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-twitter"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-ins"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheFacebook" href="https:myfacebook.com"><span
+                              class="iconfont icon-facebook"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheTwitter" href="https:mytwitter.com"><span
+                              class="iconfont icon-twitter"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheInstagram" href="https:myinstagram.com"><span
+                              class="iconfont icon-ins"></span></a>
                         </div>
                       </div>
                     </div>
@@ -970,9 +968,12 @@
                       </div>
                       <div class="social-account-wrapper">
                         <div class="social-account">
-                          <a class="icon-rounded" href=""><span class="iconfont icon-facebook"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-twitter"></span></a>
-                          <a class="icon-rounded" href=""><span class="iconfont icon-ins"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheFacebook" href="https:myfacebook.com"><span
+                              class="iconfont icon-facebook"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheTwitter" href="https:mytwitter.com"><span
+                              class="iconfont icon-twitter"></span></a>
+                          <a class="icon-rounded" aria-label="CheckTheInstagram" href="https:myinstagram.com"><span
+                              class="iconfont icon-ins"></span></a>
                         </div>
                       </div>
                     </div>
@@ -988,11 +989,11 @@
         <div class="container">
           <div class="container-inner flex flex-col align-middle">
             <div class="text-center">
-              <h4 class="uppercase text-center">
+              <span class="text-3xl uppercase text-center">
                 Submit Information to Place Order
                 <br />
                 <strong class="text-4xl"> Reserve a table </strong>
-              </h4>
+              </span>
             </div>
             <div class="relative mt-6 special-wrapper">
               <div class="half-part-img">
@@ -1007,7 +1008,7 @@
                       <div class="mt-2 flex justify-between mb-1">
                         <div class="w-1/2 mr-4">
                           <label class="leading-loose" for="full-name">Your Name</label><br />
-                          <input class="input input-full" type="text" name="name" id="full-name" placeholder=""
+                          <input class="input input-full" type="text" name="full-name" id="full-name" placeholder=""
                             required="" />
                         </div>
                         <div class="w-1/2">
@@ -1018,36 +1019,36 @@
                       </div>
                       <div class="mt-2 flex justify-between mb-1">
                         <div class="w-1/2 mr-4">
-                          <label class="leading-loose" for="full-name">Phone Number</label><br />
+                          <label class="leading-loose" for="telephone">Phone Number</label><br />
                           <input class="input input-full" type="telephone" name="telephone" id="telephone"
                             placeholder="" required="" />
                         </div>
                         <div class="w-1/2">
-                          <label class="leading-loose" for="email-address">Table For</label><br />
+                          <label class="leading-loose" for="table">Table For</label><br />
                           <input class="input input-full" type="number" id="table" name="table" min="1" max="20"
                             placeholder="1 Person" required="" />
                         </div>
                       </div>
                       <div class="mt-2 flex justify-between mb-1">
                         <div class="w-1/2 mr-4">
-                          <label class="leading-loose" for="full-name">Select Time</label><br />
+                          <label class="leading-loose" for="time">Select Time</label><br />
                           <input class="input input-full" type="time" name="time" id="time" value="13:30" placeholder=""
                             required="" />
                         </div>
                         <div class="w-1/2">
-                          <label class="leading-loose" for="email-address">Select Date</label><br />
+                          <label class="leading-loose" for="date">Select Date</label><br />
                           <input class="input input-full" type="date" id="date" name="date" required=""
                             value="2021-08-16" />
                         </div>
                       </div>
                       <div class="mt-2 mb-1">
-                        <label class="leading-loose" for="message ">Message</label><br />
+                        <label class="leading-loose" for="message">Message</label><br />
                         <textarea class="input input-full" rows="5" name="message" id="message"
                           placeholder=""></textarea>
                       </div>
                       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
                     </fieldset>
-                    <label for="reserveNow" class="
+                    <label for="reserveNow" role="button" class="
                           button
                           primary-button-long-dark
                           animation-underline
@@ -1069,7 +1070,7 @@
           <div class="bg-border-wrapper-top bg-dark newsletter -mt-24">
             <div class="pt-20 pb-10 px-9 lg:flex lg:justify-between">
               <div class="lg:w-1/2">
-                <h3 class="uppercase font-bold">Join Our Newsletter</h3>
+                <span class=" text-4xl uppercase font-bold">Join Our Newsletter</span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   nulla metus.
@@ -1080,7 +1081,8 @@
                   action="https://formspree.io/f/xgerpapa" method="post">
                   <input class="input mr-4 mb-3" type="email" name="s-email" id="s-email"
                     placeholder="Your Email Address" required />
-                  <label for="submit" class="button py-2 px-4 bg-gray-light animation-underline">Subscribe</label>
+                  <label for="submit" role="button"
+                    class="button py-2 px-4 bg-gray-light animation-underline">Subscribe</label>
                   <input class="hidden" type="submit" value="submit" id="submit" name="submit" />
                 </form>
               </div>
@@ -1089,7 +1091,7 @@
           <div class="pb-20 flex flex-wrap justify-center align-middle">
             <div class="md:w-1/3 lg:w-1/4 px-2 my-2">
               <div class="text-white">
-                <h5 class="font-bold leading-11">Dev Restaurant</h5>
+                <span class="font-bold leading-11 text-xl">Dev Restaurant</span>
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -1102,23 +1104,26 @@
                         icon-rounded
                         bg-facebook bg-opacity-75
                         hover:bg-opacity-100
-                      " href=""><span class="iconfont icon-facebook"></span></a>
+                      " href="https:facebook.com" aria-label="CheckTheFacebook"><span
+                      class="iconfont icon-facebook"></span></a>
                   <a class="
                         icon-rounded
                         bg-twitter bg-opacity-75
                         hover:bg-opacity-100
-                      " href=""><span class="iconfont icon-twitter"></span></a>
+                      " href="https:twitter.com" aria-label="CheckTheTwitter"><span
+                      class="iconfont icon-twitter"></span></a>
                   <a class="
                         icon-rounded
                         bg-instagram bg-opacity-75
                         hover:bg-opacity-100
-                      " href=""><span class="iconfont icon-ins"></span></a>
+                      " href="https:instagram.com" aria-label="CheckTheInstagram"><span
+                      class="iconfont icon-ins"></span></a>
                 </div>
               </div>
             </div>
             <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2">
               <div class="text-white">
-                <h6 class="leading-11">Open Hours</h6>
+                <span class="text-xl leading-11">Open Hours</span>
               </div>
               <ul>
                 <li>
@@ -1166,7 +1171,7 @@
             </div>
             <div class="mr-auto md:w-1/3 lg:w-1/4 px-2 my-2">
               <div class="text-white">
-                <h6 class="leading-11">Contact Us</h6>
+                <span class="text-xl leading-11">Contact Us</span>
               </div>
               <ul>
                 <li>
@@ -1176,7 +1181,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.google.com/maps" target="_blank" class="flex icon-text-align">
+                  <a href="https://www.google.com/maps" rel="noreferrer" target="_blank" class="flex icon-text-align">
                     <span class="iconfont icon-location"></span>
                     <p>121/32 Second Street, New York</p>
                   </a>
@@ -1190,7 +1195,7 @@
             </div>
             <div class="md:w-1/3 lg:w-1/4 px-2 my-2 mr-auto">
               <div class="text-white">
-                <h6 class="leading-11">Instagram</h6>
+                <span class="text-xl leading-11">Instagram</span>
               </div>
               <div class="flex flex-wrap -mx-1.25">
                 <a class="w-1/3 p-1.25" href="">

@@ -17,6 +17,9 @@
   html {
     font-display: optional;
   }
+  @font-face {
+    font-display: swap;
+  }
   h1 {
     @apply text-6xl;
   }
@@ -41,9 +44,7 @@
   a:hover {
     @apply cursor-pointer;
   }
-  .iconfont {
-    font-size: inherit;
-  }
+
   .bg-dark {
     @apply bg-gray text-white;
   }
@@ -214,7 +215,7 @@ header .part-2 {
 }
 
 header.active .part-2 {
-  @apply bg-opacity-70 text-black mt-0;
+  @apply bg-opacity-90 text-black mt-0;
 }
 header .part-1 {
   @apply block max-h-10 opacity-100 transition-all duration-500;
