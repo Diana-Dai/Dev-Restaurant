@@ -23,21 +23,6 @@
   h1 {
     @apply text-6xl;
   }
-  h2 {
-    @apply text-5xl;
-  }
-  h3 {
-    @apply text-4xl;
-  }
-  h4 {
-    @apply text-3xl;
-  }
-  h5 {
-    @apply text-2xl;
-  }
-  h6 {
-    @apply text-xl;
-  }
   img {
     @apply w-full;
   }
@@ -61,6 +46,18 @@
 }
 
 @layer components {
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
   /* Layout */
   .container {
     @apply max-w-screen-lg px-5 lg:px-2 mx-auto;
@@ -351,6 +348,7 @@ header.active .part-1 {
 .carousel-container {
   @apply relative w-full h-full overflow-hidden whitespace-nowrap cursor-pointer;
 }
+
 .carousel-container .carousel-wrapper {
   @apply h-full transform -translate-x-full text-0;
 }
@@ -367,7 +365,19 @@ header.active .part-1 {
 .carousel-container .pagination span.selected {
   @apply bg-current;
 }
+.carousel-container:hover .control-btn {
+  @apply opacity-100;
+}
+.carousel-container .control-btn {
+  @apply absolute text-3xl top-1/2 transform -translate-y-1/2 transition-all duration-500 opacity-0;
+}
 
+.carousel-container .control-btn-prev {
+  @apply left-0;
+}
+.carousel-container .control-btn-next {
+  @apply right-0;
+}
 /*==========================================*/
 /*Chefs Part */
 /*==========================================*/
