@@ -39,9 +39,9 @@
   .bg-secondary {
     @apply bg-gray-light text-gray;
   }
-
-  svg path {
-    @apply stroke-current;
+  input,
+  textarea {
+    @apply focus:outline-none focus:border-0 focus:ring-2 focus:ring-gray-300;
   }
 }
 
