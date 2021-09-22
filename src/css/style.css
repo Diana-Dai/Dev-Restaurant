@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*==========================================*/
+/* Reset */
+/*==========================================*/
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  @media (max-width: 640px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  html {
+    font-display: optional;
+  }
+  @font-face {
+    font-display: swap;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  img {
+    @apply w-full;
+  }
+  a:hover {
+    @apply cursor-pointer;
+  }
+
+  .bg-dark {
+    @apply bg-gray text-white;
+  }
+  .bg-primary {
+    @apply bg-white text-gray;
+  }
+  .bg-secondary {
+    @apply bg-gray-light text-gray;
+  }
+  input,
+  textarea {
+    @apply focus:outline-none focus:border-0 focus:ring-2 focus:ring-gray-300;
+  }
+}
+
+@layer components {
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  /* Layout */
+  .container {
+    @apply max-w-screen-lg px-5 lg:px-2 mx-auto;
+  }
+  .container-inner {
+    @apply py-12;
+  }
+
+  .line {
+    @apply inline-block align-middle h-px bg-current;
+  }
+  .icon-rounded {
+    @apply inline-block mr-3 w-12 h-12 text-xl text-center leading-11 rounded-full text-white transition-all duration-500;
+  }
+  /* Input */
+  .input {
+    @apply py-1.5 px-4 border border-current;
+  }
+  .input.input-full {
+    @apply w-full;
+  }
+  /* Buttons */
+  .button {
+    @apply cursor-pointer inline-block border-current border border-solid;
+  }
+  .button.primary-button {
+    @apply py-2 px-4 bg-white text-black leading-none;
+  }
+
+  .primary-button-long-dark {
+    @apply uppercase py-2 px-8 bg-dark;
+  }
+  /* Hover Animation */
+  .animation-underline {
+    @apply py-1 relative inline-block transition-all duration-200;
+  }
+
+  .animation-underline::before {
+    @apply absolute bottom-0 right-0 w-0 border-b-2 border-solid border-current transition-all duration-500;
+    content: "";
+  }
+  .animation-underline:hover::before {
+    @apply w-full left-0;
+  }
+  .active > .animation-underline::before {
+    @apply w-full left-0;
+  }
+  /* Background border effect */
+  .bg-border-wrapper,
+  .bg-border-wrapper-top {
+    @apply relative;
+  }
+  .bg-border-wrapper-top::before,
+  .bg-border-wrapper::before,
+  .bg-border-wrapper::after {
+    content: "";
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+  }
+  .bg-border-wrapper-top::before,
+  .bg-border-wrapper::before {
+    top: -10px;
+  }
+  .bg-border-wrapper::after {
+    bottom: -10px;
+    transform: rotate(180deg);
+  }
+  .bg-border-wrapper::before,
+  .bg-border-wrapper::after {
+    background-image: url("assets/imgs/border/bg-border.svg");
+  }
+  .bg-border-wrapper.bg-gray-light::before,
+  .bg-border-wrapper.bg-gray-light::after {
+    background-image: url("assets/imgs/border/bg-border-grey.svg");
+  }
+
+  .bg-border-wrapper-top.bg-dark::before,
+  .bg-border-wrapper.bg-dark::before,
+  .bg-border-wrapper.bg-dark::after {
+    background-image: url("assets/imgs/border/bg-border-dark.svg");
+  }
+  /* card */
+  .card-container-wrapper {
+    @apply sm:flex flex-wrap justify-around;
+  }
+  .card-container-wrapper.about {
+    @apply md:-mt-28;
+  }
+  .card-container-wrapper.chef {
+    @apply flex;
+  }
+  .card-container-wrapper.about .card-container {
+    @apply my-6 sm:w-1/2 md:w-1/3 sm:px-3;
+  }
+
+  .card-container-wrapper.chef .card-container {
+    @apply w-1/2 sm:w-1/2 md:w-1/3 px-3;
+  }
+  .about-card-wrapper {
+    @apply bg-primary md:rounded-b-none rounded-3;
+  }
+  /* Special Layout */
+  .special-wrapper {
+    @apply md:px-10 lg:px-0 relative;
+  }
+  @media screen and (min-width: 768px) {
+    .special-wrapper .half-part-img {
+      width: 35.5rem;
+    }
+    .special-wrapper .half-part-text {
+      width: 30.5rem;
+    }
+  }
+  .special-wrapper .half-part-text {
+    @apply md:flex md:items-center;
+  }
+  .special-wrapper .half-part-text.right {
+    @apply md:absolute md:right-0 md:top-0 md:bottom-0;
+  }
+  .special-wrapper .half-part-img.right {
+    @apply md:ml-auto;
+  }
+  .special-wrapper .half-part-img.right + .half-part-text {
+    @apply md:absolute md:top-0 h-full;
+  }
+
+  .special-wrapper .special-text-wrapper {
+    @apply px-6 py-10 md:px-10;
+  }
+
+  /* Set ellipsis to the text if it's more than 4 rows */
+  .ellipsisText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+/*==========================================*/
+/* Header Part */
+/*==========================================*/
+header {
+  z-index: 999;
+}
+header .part-2 {
+  @apply transition-all duration-500 bg-white bg-opacity-0;
+}
+
+header.active .part-2 {
+  @apply bg-opacity-90 text-black mt-0;
+}
+header .part-1 {
+  @apply block max-h-10 opacity-100 transition-all duration-500;
+}
+header.active .part-1 {
+  @apply max-h-0 opacity-0;
+  clip: rect(0, 0, 0, 0);
+}
+/* Navbar Animation */
+.navbar,
+.body {
+  @apply transition-all duration-200;
+}
+.navbar {
+  transform: translateX(300px);
+}
+.navbar-open {
+  @apply overflow-y-hidden;
+}
+.navbar-open .navbar {
+  @apply transform translate-x-0;
+}
+.navbar-open .body {
+  transform: translateX(-300px);
+}
+.navbar-open .body::after {
+  content: "";
+  @apply absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-70;
+}
+/* Nav Tabs Animation */
+
+/*==========================================*/
+/* Hero Part */
+/*==========================================*/
+
+.hero {
+  background-image: url("assets/imgs/background/background-1.jpg");
+  background-position: center;
+}
+
+/*==========================================*/
+/* Dished Part */
+/*==========================================*/
+
+/* Menu Nav Tabs Component*/
+.menu-tabs {
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-link.active {
+  @apply text-white bg-black;
+}
+
+.menu-tabs .nav-link {
+  @apply cursor-pointer transition-colors duration-500  w-20 h-20 md:w-40 md:h-40 text-center flex flex-col justify-center items-center;
+}
+
+.tab-pane {
+  @apply hidden py-5 opacity-0 transition-opacity;
+}
+.tab-pane.active {
+  @apply block opacity-100;
+}
+/* Menu Item Component */
+
+.menu-item {
+  @apply py-4 lg:py-10 px-2.5 w-full lg:w-1/4 sm:w-1/3  flex flex-col items-center;
+}
+.menu-item .img-wrapper {
+  @apply lg:w-1/2 w-4/6 rounded-sm relative;
+}
+.menu-item .img-wrapper img {
+  @apply w-full;
+}
+.menu-item .img-wrapper .price-wrapper {
+  @apply absolute rounded-full bg-black text-center;
+}
+.menu-item .text-wrapper {
+  @apply text-center;
+}
+.menu-item .text-wrapper h6 {
+  @apply my-3 uppercase whitespace-nowrap leading-none;
+}
+
+.menu-item .text-wrapper {
+  @apply my-2;
+}
+.menu-item .price-wrapper {
+  @apply text-white transform -translate-y-1/2 top-0 right-0 -mr-14 w-12 h-12 leading-11;
+}
+
+/*==========================================*/
+/*Set Menu Part */
+/*==========================================*/
+
+.set-menu .bg-container {
+  background-image: url("assets/imgs/background/background-2.png");
+}
+/* Menu Component */
+.set-menu .line {
+  @apply text-black opacity-20;
+}
+.set-menu .menu-detail-wrapper {
+  @apply flex flex-col items-center my-5;
+}
+.set-menu .menu-detail-wrapper .menu-detail {
+  @apply mb-2 w-full;
+}
+.set-menu .menu-detail-wrapper .menu-detail .description {
+  @apply tracking-tighter;
+}
+.set-menu .menu-detail-wrapper .menu-dish {
+  @apply leading-loose text-lg flex flex-row justify-around items-center;
+}
+.set-menu .menu-detail-wrapper .menu-dish p {
+  @apply flex-grow-0;
+}
+.set-menu .menu-detail-wrapper .menu-dish .price {
+  @apply flex-grow-0;
+}
+.set-menu .menu-detail-wrapper .menu-dish .line {
+  @apply flex-grow mx-1;
+}
+
+/*==========================================*/
+/*Customers Part */
+/*==========================================*/
+
+.customers .line {
+  @apply w-10 mr-5;
+}
+
+/*Carousel Components*/
+.carousel-container {
+  @apply relative w-full h-full overflow-hidden whitespace-nowrap cursor-pointer;
+}
+
+.carousel-container .carousel-wrapper {
+  @apply h-full transform -translate-x-full text-0;
+}
+.carousel-container .carousel-wrapper .slide {
+  @apply inline-block  bg-dark w-full h-full relative;
+}
+.carousel-container .pagination {
+  @apply absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2;
+}
+.carousel-container .pagination span {
+  @apply inline-block mx-1.25 w-2 h-2 border border-solid border-current rounded-full transition-all duration-700;
+}
+
+.carousel-container .pagination span.selected {
+  @apply bg-current;
+}
+.carousel-container:hover .control-btn {
+  @apply opacity-100;
+}
+.carousel-container .control-btn {
+  @apply absolute text-3xl top-1/2 transform -translate-y-1/2 transition-all duration-500 opacity-0;
+}
+
+.carousel-container .control-btn-prev {
+  @apply left-0;
+}
+.carousel-container .control-btn-next {
+  @apply right-0;
+}
+/*==========================================*/
+/*Chefs Part */
+/*==========================================*/
+/* Chef Card component */
+
+.chef-card-wrapper {
+  @apply relative py-2;
+}
+.chef-card-wrapper::before {
+  content: "";
+  @apply absolute bottom-2 top-16 left-0 right-0 bg-secondary;
+}
+.chef-img {
+  @apply relative mb-10;
+}
+.chef-detail {
+  @apply transition-colors duration-500 bg-secondary cursor-pointer absolute bottom-0 left-0 right-0 flex items-center justify-center;
+}
+
+.chef-text-wrapper {
+  @apply my-3 text-center;
+}
+.chef-text-wrapper span {
+  @apply text-xs md:text-lg;
+}
+.chef-title {
+  @apply text-base md:text-xl font-bold my-0 md:my-3;
+}
+
+.chef-detail,
+.chef-card-wrapper::before {
+  @apply rounded-b-xl md:rounded-b-3;
+}
+
+.chef-detail .social-account-wrapper {
+  @apply border-t border-solid border-transparent overflow-hidden max-h-0 transition-all duration-700;
+}
+
+.social-account {
+  @apply flex justify-between py-2;
+}
+.social-account .icon-rounded {
+  @apply hover:bg-white hover:text-black;
+}
+.chef-detail:hover {
+  @apply bg-dark;
+}
+.chef-detail:hover .social-account-wrapper {
+  @apply border-current max-h-44 transition-all duration-700;
+}
+
+/*==========================================*/
+/*Footer Part */
+/*==========================================*/
+.icon-text-align {
+  @apply leading-none;
+}
+.icon-text-align span {
+  @apply mr-2 w-4 inline-block leading-none align-bottom;
+}
+
+footer .newsletter {
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+footer li {
+  @apply py-1;
+}

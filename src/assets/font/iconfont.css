@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2759806 */
+  src: url("iconfont.woff2?t=1630111182815") format("woff2"),
+    url("iconfont.woff?t=1630111182815") format("woff"),
+    url("iconfont.ttf?t=1630111182815") format("truetype");
+  font-display: swap;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-prev:before {
+  content: "\e61c";
+}
+
+.icon-next:before {
+  content: "\e7a7";
+}
+
+.icon-close:before {
+  content: "\e66b";
+}
+
+.icon-location:before {
+  content: "\e615";
+}
+
+.icon-clock:before {
+  content: "\e656";
+}
+
+.icon-twitter:before {
+  content: "\ecc1";
+}
+
+.icon-facebook:before {
+  content: "\e6e5";
+}
+
+.icon-delivery:before {
+  content: "\e605";
+}
+
+.icon-pizza:before {
+  content: "\e606";
+}
+
+.icon-phone:before {
+  content: "\e608";
+}
+
+.icon-ins:before {
+  content: "\e609";
+}
+
+.icon-like:before {
+  content: "\e60b";
+}
+
+.icon-menu:before {
+  content: "\e894";
+}
+
+.icon-burger:before {
+  content: "\e639";
+}
+
+.icon-mail:before {
+  content: "\e600";
+}
+
+.icon-dinner:before {
+  content: "\e601";
+}
+
+.icon-lunch:before {
+  content: "\e602";
+}
+
+.icon-desert:before {
+  content: "\e603";
+}
+
+.icon-wine:before {
+  content: "\e604";
+}
